@@ -1,0 +1,7 @@
+# Automatically convert line endings to the natives ones on checkout, but keep LF in repository
+* text
+
+# Mark binary files explicitly (will not appear in 'git show' or 'git diff')
+*.xls binary
+*.dll binary
+*.exe binary
