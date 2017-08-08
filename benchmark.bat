@@ -1,18 +1,50 @@
-mkdir logs\arrays
-mkdir logs\cells
-mkdir logs\seq
+@echo off
+if "%1" == "" goto :help
+if "%2" == "" goto :help
 
-call git checkout origin/fbie/cell-array-transformation
-call build -c
-call build -r -n
-for /f "usebackq delims=|" %f in (`dir /b /s ..\funcalc-euses ^| findstr /i "\.xml$"`) do call funcalc -r full 100 %f 1> logs\arrays\%~nxf.out 2> logs\arrays\%~nxf.err
-
-call git checkout origin/fbie/parallel-full-recalc
-call build -c
-call build -r -n
-for /f "usebackq delims=|" %f in (`dir /b /s ..\funcalc-euses ^| findstr /i "\.xml$"`) do call funcalc -r full 100 %f 1> logs\cells\%~nxf.out 2> logs\cells\%~nxf.err
-
+:: Baseline
 call git checkout origin/parallel
-call build -c
-call build -r -n
-for /f "usebackq delims=|" %f in (`dir /b /s ..\funcalc-euses ^| findstr /i "\.xml$"`) do call funcalc -r full 100 %f 1> logs\seq\%~nxf.out 2> logs\seq\%~nxf.err
+call :benchmark %1 %2 logs\seq
+
+:: Parallel task per cell
+call git checkout origin/fbie/parallel-full-recalc
+call :benchmark %1 %2 logs\cells
+
+:: Lifted cell arrays
+call git checkout origin/fbie/cell-array-transformation
+call :benchmark %1 %2 logs\arrays
+
+exit /b
+
+:help
+echo Usage:
+echo   benchmark.bat path\to\sheets iterations
+echo.
+echo path\to\sheets - Path to a folder that contains XML spreadsheets.
+echo iterations     - Number of iterations to repeat.
+echo.
+
+:: Done
+exit /b
+
+:benchmark
+setlocal
+set files=%1
+set n=%2
+set log=%3
+mkdir %log%
+
+:: Log build events
+echo Building...
+call build -c    >  %log%\build.log 2>&1
+call build -r -n >> %log%\build.log 2>&1
+
+echo Benchmarking...
+:: Benchmark Funcalc for each sheet.
+for /r %files% %%I in (*.xml) do (
+    call funcalc -r full %n% "%%I" 1> "%log%\%%~nxI.out" 2> "%log%\%%~nxI.err"
+)
+
+echo Done!
+endlocal
+exit /b
