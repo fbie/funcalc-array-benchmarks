@@ -155,3 +155,18 @@ Let's see how well we're doing.
 
 #+RESULTS:
 [[file:plots/errorbars.png]]
+
+
+* Synthetic Benchmarks
+
+#+begin_src R :session :results value
+computeSpeedups("examples/arrays", "examples/seq")
+#+end_src
+
+#+RESULTS:
+| finance2.xml | 1.64263689569177 | 0.0787088002962015 |
+| finance.xml  | 2.18403184091102 | 0.0972320411188693 |
+| testsdf.xml  | 2.22242023724549 | 0.0790671703635237 |
+
+
+I changed the number of benchmarks to run in ~testsdf.xml~ to 100.  Clearly, our large or computationally heavy sheets gain much more from cell array lifting than the real-life sheets.
