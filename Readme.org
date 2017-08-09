@@ -24,7 +24,6 @@ How many arrays did the algorithm convert per sheet?
   print(cbind(errs, lifts))
 #+end_src
 
-#+RESULTS:
 | arrays/02rise.xml.err                      | Lifted 1 intransitive, 0 transitive cell arrays.  |
 | arrays/2000_places_School.xml.err            | Lifted 0 intransitive, 0 transitive cell arrays.  |
 | arrays/2002Qvols.xml.err                   | Lifted 2 intransitive, 0 transitive cell arrays.  |
@@ -44,3 +43,8 @@ How many arrays did the algorithm convert per sheet?
 | arrays/Time.xml.err                        | Lifted 0 intransitive, 0 transitive cell arrays.  |
 | arrays/v1tmp.xml.err                       | Lifted 0 intransitive, 0 transitive cell arrays.  |
 | arrays/WasteCalendarCalculat#A843B.xml.err | Lifted 3 intransitive, 0 transitive cell arrays.  |
+
+It seems that
+
+1. cell arrays are in general smaller than we expected (< 64 cells); and
+2. there are many cell arrays that would introduce cyclic dependencies when lifted.
