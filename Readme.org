@@ -99,7 +99,7 @@ Let's see how well we're doing.
     base      <- readLog("seq", file)
     base_mean <- mean(getElapsed(base))
     speedups  <- sapply(getElapsed(perf), function (x) { return (base_mean / x)})
-    c(mean(speedup), sd(speedup))
+    c(mean(speedups), sd(speedups))
   }
   cbind(c("Mean", "Stddev"), getSpeedup("arrays", file))
 #+end_src
@@ -121,3 +121,36 @@ Let's see how well we're doing.
 
 #+RESULTS:
 [[file:plots/MRP_Excel_array_hist.png]]
+
+
+* Overall Analysis
+
+#+begin_src R :session :results value
+  speedups <- t(sapply(list.files("arrays", pattern="out"),
+                       function (file) {
+                           f <- gsub(".out", "", file)
+                           s <- getSpeedup("arrays", f)
+                           rbind(f, s[1], s[2])
+                       }))
+#+end_src
+
+#+RESULTS:
+| 02rise.xml                      |  1.29935115137683 |  0.0111817642131435 |
+| 2000_places_School.xml            | 0.958804022733049 |  0.0196463874124325 |
+| 2002Qvols.xml                   |  1.05445146981825 |  0.0579153407486464 |
+| 2004_PUBLIC_BUGS_INVENTORY.xml     |  2.55936080359615 |  0.0432220803385926 |
+| Aggregate20Governanc#A8A51.xml  | 0.728161362682299 |  0.0396664158596318 |
+| EducAge25.xml                   | 0.992521322687699 |    0.01316451835416 |
+| financial-model-spreadsheet.xml |  1.00408488642795 |  0.0185798889449448 |
+| Financial-Projections.xml       | 0.671978492275997 |   0.172038397229881 |
+| funding.xml                     | 0.938115923760974 |  0.0127707539968076 |
+| high_2003_belg.xml                |  1.00804140160569 | 0.00713195684269357 |
+| iste-cs-2003-modeling-sim.xml   |  1.06686689564902 |  0.0221215932381738 |
+| modeling-3.xml                  | 0.885667106961191 |  0.0644298329546388 |
+| MRP_Excel.xml                    |  1.00783552107408 | 0.00759186384897456 |
+| notes5CMISB200SP04H2KEY.xml     | 0.896945932800307 |  0.0299784889824813 |
+| ny_emit99.xml                    |  0.99600164373344 | 0.00573464551245189 |
+| Test20Station20Powe#A90F3.xml   |  1.18589834624624 |  0.0388060699704289 |
+| Time.xml                        |  1.03850249246594 |   0.011969563831197 |
+| v1tmp.xml                       |  1.13224970460943 |  0.0261843664370754 |
+| WasteCalendarCalculat#A843B.xml | 0.892923891815097 |   0.104011986966532 |
