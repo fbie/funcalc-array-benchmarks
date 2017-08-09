@@ -13,7 +13,7 @@ The date at which the benchmarks have been run can be found in the file ~build.l
 How many arrays did the algorithm convert per sheet?
 
 #+begin_src R :session :exports both :results value
-  errs <- list.files(path="arrays", pattern="err", full.names=TRUE)
+  errs <- list.files(path="euses/arrays", pattern="err", full.names=TRUE)
   lifts <- sapply(errs, (function (err) {
       for (line in scan(err, what = character(), sep = "\n")) {
           if (grepl("Lifted", line))
@@ -24,25 +24,25 @@ How many arrays did the algorithm convert per sheet?
 #+end_src
 
 #+RESULTS:
-| arrays/02rise.xml                      | Lifted 1 intransitive, 0 transitive cell arrays.  |
-| arrays/2000_places_School.xml            | Lifted 0 intransitive, 0 transitive cell arrays.  |
-| arrays/2002Qvols.xml                   | Lifted 2 intransitive, 0 transitive cell arrays.  |
-| arrays/2004_PUBLIC_BUGS_INVENTORY.xml     | Lifted 4 intransitive, 0 transitive cell arrays.  |
-| arrays/Aggregate20Governanc#A8A51.xml  | Lifted 30 intransitive, 0 transitive cell arrays. |
-| arrays/EducAge25.xml                   | Lifted 0 intransitive, 0 transitive cell arrays.  |
-| arrays/financial-model-spreadsheet.xml | Lifted 0 intransitive, 0 transitive cell arrays.  |
-| arrays/Financial-Projections.xml       | Lifted 5 intransitive, 0 transitive cell arrays.  |
-| arrays/funding.xml                     | Lifted 6 intransitive, 0 transitive cell arrays.  |
-| arrays/high_2003_belg.xml                | Lifted 3 intransitive, 1 transitive cell arrays.  |
-| arrays/iste-cs-2003-modeling-sim.xml   | Lifted 2 intransitive, 0 transitive cell arrays.  |
-| arrays/modeling-3.xml                  | Lifted 0 intransitive, 0 transitive cell arrays.  |
-| arrays/MRP_Excel.xml                    | Lifted 44 intransitive, 6 transitive cell arrays. |
-| arrays/notes5CMISB200SP04H2KEY.xml     | Lifted 3 intransitive, 0 transitive cell arrays.  |
-| arrays/ny_emit99.xml                    | Lifted 0 intransitive, 0 transitive cell arrays.  |
-| arrays/Test20Station20Powe#A90F3.xml   | Lifted 9 intransitive, 0 transitive cell arrays.  |
-| arrays/Time.xml                        | Lifted 0 intransitive, 0 transitive cell arrays.  |
-| arrays/v1tmp.xml                       | Lifted 0 intransitive, 0 transitive cell arrays.  |
-| arrays/WasteCalendarCalculat#A843B.xml | Lifted 3 intransitive, 0 transitive cell arrays.  |
+| euses/arrays/02rise.xml                      | Lifted 1 intransitive, 0 transitive cell arrays.  |
+| euses/arrays/2000_places_School.xml            | Lifted 0 intransitive, 0 transitive cell arrays.  |
+| euses/arrays/2002Qvols.xml                   | Lifted 2 intransitive, 0 transitive cell arrays.  |
+| euses/arrays/2004_PUBLIC_BUGS_INVENTORY.xml     | Lifted 4 intransitive, 0 transitive cell arrays.  |
+| euses/arrays/Aggregate20Governanc#A8A51.xml  | Lifted 30 intransitive, 0 transitive cell arrays. |
+| euses/arrays/EducAge25.xml                   | Lifted 0 intransitive, 0 transitive cell arrays.  |
+| euses/arrays/financial-model-spreadsheet.xml | Lifted 0 intransitive, 0 transitive cell arrays.  |
+| euses/arrays/Financial-Projections.xml       | Lifted 5 intransitive, 0 transitive cell arrays.  |
+| euses/arrays/funding.xml                     | Lifted 6 intransitive, 0 transitive cell arrays.  |
+| euses/arrays/high_2003_belg.xml                | Lifted 3 intransitive, 1 transitive cell arrays.  |
+| euses/arrays/iste-cs-2003-modeling-sim.xml   | Lifted 2 intransitive, 0 transitive cell arrays.  |
+| euses/arrays/modeling-3.xml                  | Lifted 0 intransitive, 0 transitive cell arrays.  |
+| euses/arrays/MRP_Excel.xml                    | Lifted 44 intransitive, 6 transitive cell arrays. |
+| euses/arrays/notes5CMISB200SP04H2KEY.xml     | Lifted 3 intransitive, 0 transitive cell arrays.  |
+| euses/arrays/ny_emit99.xml                    | Lifted 0 intransitive, 0 transitive cell arrays.  |
+| euses/arrays/Test20Station20Powe#A90F3.xml   | Lifted 9 intransitive, 0 transitive cell arrays.  |
+| euses/arrays/Time.xml                        | Lifted 0 intransitive, 0 transitive cell arrays.  |
+| euses/arrays/v1tmp.xml                       | Lifted 0 intransitive, 0 transitive cell arrays.  |
+| euses/arrays/WasteCalendarCalculat#A843B.xml | Lifted 3 intransitive, 0 transitive cell arrays.  |
 
 
 It seems that
@@ -95,7 +95,7 @@ Let's see how well we're doing.
 #+RESULTS:
 [[file:plots/MRP_Excel_array_plot.png]]
 
-#+begin_src R :session  :exports both :results graphics :file plots/MRP_Excel_array_hist.png
+#+begin_src R :session :exports both :results graphics :file plots/MRP_Excel_array_hist.png
   hist(getElapsed(array), freq=0.1)
 #+end_src
 
