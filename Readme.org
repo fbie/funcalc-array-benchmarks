@@ -12,7 +12,7 @@ The date at which the benchmarks have been run can be found in the file ~build.l
 
 How many arrays did the algorithm convert per sheet?
 
-#+begin_src R :session :results value
+#+begin_src R :session :exports both :results value
   errs <- list.files(path="arrays", pattern="err", full.names=TRUE)
   lifts <- sapply(errs, (function (err) {
       for (line in scan(err, what = character(), sep = "\n")) {
@@ -24,7 +24,6 @@ How many arrays did the algorithm convert per sheet?
 #+end_src
 
 #+RESULTS:
-
 | arrays/02rise.xml                      | Lifted 1 intransitive, 0 transitive cell arrays.  |
 | arrays/2000_places_School.xml            | Lifted 0 intransitive, 0 transitive cell arrays.  |
 | arrays/2002Qvols.xml                   | Lifted 2 intransitive, 0 transitive cell arrays.  |
@@ -56,7 +55,7 @@ It seems that
 
 Let's see how well we're doing.
 
-#+begin_src R :session :results value
+#+begin_src R :session :exports both :results value
   # file <- "MRP_Excel.xml"
   file <- "Aggregate20Governanc#A8A51.xml"
   readLog <- function (prefix, file) {
@@ -89,14 +88,14 @@ Let's see how well we're doing.
 | Mean   |  0.728161362682299 |
 | Stddev | 0.0396664158596318 |
 
-#+begin_src R :session :results graphics :file plots/MRP_Excel_array_plot.png
+#+begin_src R :session :exports both :results graphics :file plots/MRP_Excel_array_plot.png
   plot(getElapsed(array))
 #+end_src
 
 #+RESULTS:
 [[file:plots/MRP_Excel_array_plot.png]]
 
-#+begin_src R :session :results graphics :file plots/MRP_Excel_array_hist.png
+#+begin_src R :session  :exports both :results graphics :file plots/MRP_Excel_array_hist.png
   hist(getElapsed(array), freq=0.1)
 #+end_src
 
@@ -106,7 +105,7 @@ Let's see how well we're doing.
 
 * Overall Analysis
 
-#+begin_src R :session :results value
+#+begin_src R :session :exports both :results value
   computeSpeedups <- function (benchmark, baseline) {
     files <- list.files(benchmark, pattern="out")
     speedups <- t(sapply(files,
@@ -144,7 +143,7 @@ Let's see how well we're doing.
 | WasteCalendarCalculat#A843B.xml | 0.892923891815097 |   0.104011986966532 |
 
 
-#+begin_src R :session :results graphics :file plots/errorbars.png
+#+begin_src R :session :exports both :results graphics :file plots/errorbars.png
   plot.bar <- function (cols, col) {
       ts <- t(matrix(cols[,col]))
       ts.names <- cols[,1]
@@ -159,7 +158,7 @@ Let's see how well we're doing.
 
 * Synthetic Benchmarks
 
-#+begin_src R :session :results value
+#+begin_src R :session :exports both :results value
 computeSpeedups("examples/arrays", "examples/seq")
 #+end_src
 
