@@ -77,20 +77,37 @@ Let's see how well we're doing.
 
 #+begin_src R :session :results value
   file <- "MRP_Excel.xml"
-  array <- read.table(paste("arrays/", file, ".out", sep=""),
-                      dec=".",
-                      row.names=3,
-                      col.names=c("iteration", "mode", "elapsed"),
-                      skip=2,
-                      stringsAsFactors=TRUE)
+  readLog <- function (prefix, file) {
+      return (read.table(paste(prefix, "/", file, ".out", sep=""),
+                         dec=".",
+                         row.names=3,
+                         col.names=c("iteration", "mode", "elapsed"),
+                         skip=2,
+                         stringsAsFactors=TRUE))
+  }
   getElapsed <- function (x) {
       as.double(sapply(array[2], function (x) {
           return(sub(",", ".", sub("ms", "", x)))
       }))
   }
+  array <- readLog("arrays", file)
   cbind(c("Mean", "StdDev"), c(mean(getElapsed(array)), sd(getElapsed(array))))
 #+end_src
 
 #+RESULTS:
 | Mean   |           9.281517 |
 | StdDev | 0.0701914899659237 |
+
+#+begin_src R :session :results graphics :file plots/MRP_Excel_array_plot.png
+  plot(getElapsed(array))
+#+end_src
+
+#+RESULTS:
+[[file:plots/MRP_Excel_array_plot.png]]
+
+#+begin_src R :session :results graphics :file plots/MRP_Excel_array_hist.png
+  hist(getElapsed(array), freq=0.1)
+#+end_src
+
+#+RESULTS:
+[[file:plots/MRP_Excel_array_hist.png]]
