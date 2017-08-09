@@ -24,25 +24,6 @@ How many arrays did the algorithm convert per sheet?
 #+end_src
 
 #+RESULTS:
-| arrays/02rise.xml                      | Lifted 1 intransitive, 0 transitive cell arrays.  |
-| arrays/2000_places_School.xml            | Lifted 0 intransitive, 0 transitive cell arrays.  |
-| arrays/2002Qvols.xml                   | Lifted 2 intransitive, 0 transitive cell arrays.  |
-| arrays/2004_PUBLIC_BUGS_INVENTORY.xml     | Lifted 4 intransitive, 0 transitive cell arrays.  |
-| arrays/Aggregate20Governanc#A8A51.xml  | Lifted 30 intransitive, 0 transitive cell arrays. |
-| arrays/EducAge25.xml                   | Lifted 0 intransitive, 0 transitive cell arrays.  |
-| arrays/financial-model-spreadsheet.xml | Lifted 0 intransitive, 0 transitive cell arrays.  |
-| arrays/Financial-Projections.xml       | Lifted 5 intransitive, 0 transitive cell arrays.  |
-| arrays/funding.xml                     | Lifted 6 intransitive, 0 transitive cell arrays.  |
-| arrays/high_2003_belg.xml                | Lifted 3 intransitive, 1 transitive cell arrays.  |
-| arrays/iste-cs-2003-modeling-sim.xml   | Lifted 2 intransitive, 0 transitive cell arrays.  |
-| arrays/modeling-3.xml                  | Lifted 0 intransitive, 0 transitive cell arrays.  |
-| arrays/MRP_Excel.xml                    | Lifted 44 intransitive, 6 transitive cell arrays. |
-| arrays/notes5CMISB200SP04H2KEY.xml     | Lifted 3 intransitive, 0 transitive cell arrays.  |
-| arrays/ny_emit99.xml                    | Lifted 0 intransitive, 0 transitive cell arrays.  |
-| arrays/Test20Station20Powe#A90F3.xml   | Lifted 9 intransitive, 0 transitive cell arrays.  |
-| arrays/Time.xml                        | Lifted 0 intransitive, 0 transitive cell arrays.  |
-| arrays/v1tmp.xml                       | Lifted 0 intransitive, 0 transitive cell arrays.  |
-| arrays/WasteCalendarCalculat#A843B.xml | Lifted 3 intransitive, 0 transitive cell arrays.  |
 
 | arrays/02rise.xml                      | Lifted 1 intransitive, 0 transitive cell arrays.  |
 | arrays/2000_places_School.xml            | Lifted 0 intransitive, 0 transitive cell arrays.  |
@@ -94,14 +75,14 @@ Let's see how well we're doing.
       }))
   }
 
-  getSpeedup <- function (path, file) {
-    perf      <- readLog(path, file)
-    base      <- readLog("seq", file)
+  getSpeedup <- function (experiments, baseline, file) {
+    perf      <- readLog(experiments, file)
+    base      <- readLog(baseline, file)
     base_mean <- mean(getElapsed(base))
     speedups  <- sapply(getElapsed(perf), function (x) { return (base_mean / x)})
     c(mean(speedups), sd(speedups))
   }
-  cbind(c("Mean", "Stddev"), getSpeedup("arrays", file))
+  cbind(c("Mean", "Stddev"), getSpeedup("euses/arrays", "euses/seq", file))
 #+end_src
 
 #+RESULTS:
@@ -126,11 +107,11 @@ Let's see how well we're doing.
 * Overall Analysis
 
 #+begin_src R :session :results value
-  files <- list.files("arrays", pattern="out")
+  files <- list.files("euses/arrays", pattern="out")
   speedups <- t(sapply(files,
                        function (file) {
                            f <- gsub(".out", "", file)
-                           s <- getSpeedup("arrays", f)
+                           s <- getSpeedup("euses/arrays", "euses/seq", f)
                            return(rbind(f, s[1], s[2]))
                        }))
   speedups.row.names <- files
