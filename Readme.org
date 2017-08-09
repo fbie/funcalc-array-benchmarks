@@ -12,37 +12,37 @@ The date at which the benchmarks have been run can be found in the file ~build.l
 
 How many arrays did the algorithm convert per sheet?
 
-#+begin_src R :session
+#+begin_src R :session :results value
   errs <- list.files(path="arrays", pattern="err", full.names=TRUE)
   lifts <- sapply(errs, (function (err) {
       for (line in scan(err, what = character(), sep = "\n")) {
-          if (grepl("Lifted", line)) {
+          if (grepl("Lifted", line))
             return(line)
-          }
       }
   }))
-  print(cbind(errs, lifts))
+  cbind(sapply(errs, function (x) { sub(".err", "", x)}), lifts)
 #+end_src
 
-| arrays/02rise.xml.err                      | Lifted 1 intransitive, 0 transitive cell arrays.  |
-| arrays/2000_places_School.xml.err            | Lifted 0 intransitive, 0 transitive cell arrays.  |
-| arrays/2002Qvols.xml.err                   | Lifted 2 intransitive, 0 transitive cell arrays.  |
-| arrays/2004_PUBLIC_BUGS_INVENTORY.xml.err     | Lifted 4 intransitive, 0 transitive cell arrays.  |
-| arrays/Aggregate20Governanc#A8A51.xml.err  | Lifted 30 intransitive, 0 transitive cell arrays. |
-| arrays/EducAge25.xml.err                   | Lifted 0 intransitive, 0 transitive cell arrays.  |
-| arrays/financial-model-spreadsheet.xml.err | Lifted 0 intransitive, 0 transitive cell arrays.  |
-| arrays/Financial-Projections.xml.err       | Lifted 5 intransitive, 0 transitive cell arrays.  |
-| arrays/funding.xml.err                     | Lifted 6 intransitive, 0 transitive cell arrays.  |
-| arrays/high_2003_belg.xml.err                | Lifted 3 intransitive, 1 transitive cell arrays.  |
-| arrays/iste-cs-2003-modeling-sim.xml.err   | Lifted 2 intransitive, 0 transitive cell arrays.  |
-| arrays/modeling-3.xml.err                  | Lifted 0 intransitive, 0 transitive cell arrays.  |
-| arrays/MRP_Excel.xml.err                    | Lifted 44 intransitive, 6 transitive cell arrays. |
-| arrays/notes5CMISB200SP04H2KEY.xml.err     | Lifted 3 intransitive, 0 transitive cell arrays.  |
-| arrays/ny_emit99.xml.err                    | Lifted 0 intransitive, 0 transitive cell arrays.  |
-| arrays/Test20Station20Powe#A90F3.xml.err   | Lifted 9 intransitive, 0 transitive cell arrays.  |
-| arrays/Time.xml.err                        | Lifted 0 intransitive, 0 transitive cell arrays.  |
-| arrays/v1tmp.xml.err                       | Lifted 0 intransitive, 0 transitive cell arrays.  |
-| arrays/WasteCalendarCalculat#A843B.xml.err | Lifted 3 intransitive, 0 transitive cell arrays.  |
+| arrays/02rise.xml                      | Lifted 1 intransitive, 0 transitive cell arrays.  |
+| arrays/2000_places_School.xml            | Lifted 0 intransitive, 0 transitive cell arrays.  |
+| arrays/2002Qvols.xml                   | Lifted 2 intransitive, 0 transitive cell arrays.  |
+| arrays/2004_PUBLIC_BUGS_INVENTORY.xml     | Lifted 4 intransitive, 0 transitive cell arrays.  |
+| arrays/Aggregate20Governanc#A8A51.xml  | Lifted 30 intransitive, 0 transitive cell arrays. |
+| arrays/EducAge25.xml                   | Lifted 0 intransitive, 0 transitive cell arrays.  |
+| arrays/financial-model-spreadsheet.xml | Lifted 0 intransitive, 0 transitive cell arrays.  |
+| arrays/Financial-Projections.xml       | Lifted 5 intransitive, 0 transitive cell arrays.  |
+| arrays/funding.xml                     | Lifted 6 intransitive, 0 transitive cell arrays.  |
+| arrays/high_2003_belg.xml                | Lifted 3 intransitive, 1 transitive cell arrays.  |
+| arrays/iste-cs-2003-modeling-sim.xml   | Lifted 2 intransitive, 0 transitive cell arrays.  |
+| arrays/modeling-3.xml                  | Lifted 0 intransitive, 0 transitive cell arrays.  |
+| arrays/MRP_Excel.xml                    | Lifted 44 intransitive, 6 transitive cell arrays. |
+| arrays/notes5CMISB200SP04H2KEY.xml     | Lifted 3 intransitive, 0 transitive cell arrays.  |
+| arrays/ny_emit99.xml                    | Lifted 0 intransitive, 0 transitive cell arrays.  |
+| arrays/Test20Station20Powe#A90F3.xml   | Lifted 9 intransitive, 0 transitive cell arrays.  |
+| arrays/Time.xml                        | Lifted 0 intransitive, 0 transitive cell arrays.  |
+| arrays/v1tmp.xml                       | Lifted 0 intransitive, 0 transitive cell arrays.  |
+| arrays/WasteCalendarCalculat#A843B.xml | Lifted 3 intransitive, 0 transitive cell arrays.  |
+
 
 It seems that
 
