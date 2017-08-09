@@ -107,15 +107,19 @@ Let's see how well we're doing.
 * Overall Analysis
 
 #+begin_src R :session :results value
-  files <- list.files("euses/arrays", pattern="out")
-  speedups <- t(sapply(files,
-                       function (file) {
-                           f <- gsub(".out", "", file)
-                           s <- getSpeedup("euses/arrays", "euses/seq", f)
-                           return(rbind(f, s[1], s[2]))
-                       }))
-  speedups.row.names <- files
-  speedups
+  computeSpeedups <- function (benchmark, baseline) {
+    files <- list.files(benchmark, pattern="out")
+    speedups <- t(sapply(files,
+                         function (file) {
+                             f <- gsub(".out", "", file)
+                             s <- getSpeedup(benchmark, baseline, f)
+                             return(rbind(f, s[1], s[2]))
+                         }))
+    speedups.row.names <- files
+    return(speedups)
+  }
+
+  speedups <- computeSpeedups("euses/arrays", "euses/seq")
 #+end_src
 
 #+RESULTS:
