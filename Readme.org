@@ -160,12 +160,12 @@ Let's see how well we're doing.
 
 
 #+begin_src R :session :results graphics :file plots/errorbars.png
-  plot.bar <- function (cols) {
-      ts <- t(matrix(cols[,2]))
+  plot.bar <- function (cols, col) {
+      ts <- t(matrix(cols[,col]))
       ts.names <- cols[,1]
       return(barplot(ts))
   }
-  plot.bar(speedups)
+  plot.bar(speedups, 2)
 #+end_src
 
 #+RESULTS:
