@@ -76,7 +76,8 @@ It seems that
 Let's see how well we're doing.
 
 #+begin_src R :session :results value
-  file <- "MRP_Excel.xml"
+  # file <- "MRP_Excel.xml"
+  file <- "Aggregate20Governanc#A8A51.xml"
   readLog <- function (prefix, file) {
       return (read.table(paste(prefix, "/", file, ".out", sep=""),
                          dec=".",
@@ -85,18 +86,27 @@ Let's see how well we're doing.
                          skip=2,
                          stringsAsFactors=TRUE))
   }
-  getElapsed <- function (x) {
-      as.double(sapply(array[2], function (x) {
+
+  # Turns elapsed milliseconds into doubles.
+  getElapsed <- function (vals) {
+      as.double(sapply(vals[2], function (x) {
           return(sub(",", ".", sub("ms", "", x)))
       }))
   }
-  array <- readLog("arrays", file)
-  cbind(c("Mean", "StdDev"), c(mean(getElapsed(array)), sd(getElapsed(array))))
+
+  getSpeedup <- function (path, file) {
+    perf      <- readLog(path, file)
+    base      <- readLog("seq", file)
+    base_mean <- mean(getElapsed(base))
+    speedups  <- sapply(getElapsed(perf), function (x) { return (base_mean / x)})
+    c(mean(speedup), sd(speedup))
+  }
+  cbind(c("Mean", "Stddev"), getSpeedup("arrays", file))
 #+end_src
 
 #+RESULTS:
-| Mean   |           9.281517 |
-| StdDev | 0.0701914899659237 |
+| Mean   |  0.728161362682299 |
+| Stddev | 0.0396664158596318 |
 
 #+begin_src R :session :results graphics :file plots/MRP_Excel_array_plot.png
   plot(getElapsed(array))
