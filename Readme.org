@@ -23,6 +23,27 @@ How many arrays did the algorithm convert per sheet?
   cbind(sapply(errs, function (x) { sub(".err", "", x)}), lifts)
 #+end_src
 
+#+RESULTS:
+| arrays/02rise.xml                      | Lifted 1 intransitive, 0 transitive cell arrays.  |
+| arrays/2000_places_School.xml            | Lifted 0 intransitive, 0 transitive cell arrays.  |
+| arrays/2002Qvols.xml                   | Lifted 2 intransitive, 0 transitive cell arrays.  |
+| arrays/2004_PUBLIC_BUGS_INVENTORY.xml     | Lifted 4 intransitive, 0 transitive cell arrays.  |
+| arrays/Aggregate20Governanc#A8A51.xml  | Lifted 30 intransitive, 0 transitive cell arrays. |
+| arrays/EducAge25.xml                   | Lifted 0 intransitive, 0 transitive cell arrays.  |
+| arrays/financial-model-spreadsheet.xml | Lifted 0 intransitive, 0 transitive cell arrays.  |
+| arrays/Financial-Projections.xml       | Lifted 5 intransitive, 0 transitive cell arrays.  |
+| arrays/funding.xml                     | Lifted 6 intransitive, 0 transitive cell arrays.  |
+| arrays/high_2003_belg.xml                | Lifted 3 intransitive, 1 transitive cell arrays.  |
+| arrays/iste-cs-2003-modeling-sim.xml   | Lifted 2 intransitive, 0 transitive cell arrays.  |
+| arrays/modeling-3.xml                  | Lifted 0 intransitive, 0 transitive cell arrays.  |
+| arrays/MRP_Excel.xml                    | Lifted 44 intransitive, 6 transitive cell arrays. |
+| arrays/notes5CMISB200SP04H2KEY.xml     | Lifted 3 intransitive, 0 transitive cell arrays.  |
+| arrays/ny_emit99.xml                    | Lifted 0 intransitive, 0 transitive cell arrays.  |
+| arrays/Test20Station20Powe#A90F3.xml   | Lifted 9 intransitive, 0 transitive cell arrays.  |
+| arrays/Time.xml                        | Lifted 0 intransitive, 0 transitive cell arrays.  |
+| arrays/v1tmp.xml                       | Lifted 0 intransitive, 0 transitive cell arrays.  |
+| arrays/WasteCalendarCalculat#A843B.xml | Lifted 3 intransitive, 0 transitive cell arrays.  |
+
 | arrays/02rise.xml                      | Lifted 1 intransitive, 0 transitive cell arrays.  |
 | arrays/2000_places_School.xml            | Lifted 0 intransitive, 0 transitive cell arrays.  |
 | arrays/2002Qvols.xml                   | Lifted 2 intransitive, 0 transitive cell arrays.  |
@@ -48,3 +69,28 @@ It seems that
 
 1. cell arrays are in general smaller than we expected (< 64 cells); and
 2. there are many cell arrays that would introduce cyclic dependencies when lifted.
+
+
+* Initial Data Probing
+
+Let's see how well we're doing.
+
+#+begin_src R :session :results value
+  file <- "MRP_Excel.xml"
+  array <- read.table(paste("arrays/", file, ".out", sep=""),
+                      dec=".",
+                      row.names=3,
+                      col.names=c("iteration", "mode", "elapsed"),
+                      skip=2,
+                      stringsAsFactors=TRUE)
+  getElapsed <- function (x) {
+      as.double(sapply(array[2], function (x) {
+          return(sub(",", ".", sub("ms", "", x)))
+      }))
+  }
+  cbind(c("Mean", "StdDev"), c(mean(getElapsed(array)), sd(getElapsed(array))))
+#+end_src
+
+#+RESULTS:
+| Mean   |           9.281517 |
+| StdDev | 0.0701914899659237 |
