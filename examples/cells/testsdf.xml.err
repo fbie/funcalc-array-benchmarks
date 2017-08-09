@@ -1,0 +1,244 @@
+Setting EvalCond[@Functions!B71] = NOT(CACHE#0[NOT(@Functions!B70)])
+Setting EvalCond[@Functions!B179] = CACHE#0[RAND()<0,2]
+Setting EvalCond[@Functions!B185] = ((NOT(CACHE#0[RAND()<0,2]) && CACHE#1[RAND()<0,2]) || CACHE#0[RAND()<0,2])
+Setting EvalCond[@Goalseek!C24] = (CACHE#58[@Goalseek!D24<=0] || NOT(CACHE#59[@Goalseek!D24<=0]))
+Setting EvalCond[@Goalseek!B91] = NOT(CACHE#0[ABS(@Goalseek!B87)<1E-07])
+Setting EvalCond[@Lookup!B42] = NOT(CACHE#0[@Lookup!B41<=INDEX(@Lookup!B39,1,1)])
+Setting EvalCond[@Sampling!A155] = (NOT(CACHE#0[0>@Sampling!B152]) || NOT(CACHE#1[1>@Sampling!B152]) || NOT(CACHE#2[2>@Sampling!B152]) || NOT(CACHE#3[3>@Sampling!B152]) || NOT(CACHE#4[4>@Sampling!B152]) || NOT(CACHE#5[5>@Sampling!B152]) || NOT(CACHE#6[6>@Sampling!B152]) || NOT(CACHE#7[7>@Sampling!B152]) || NOT(CACHE#8[8>@Sampling!B152]) || NOT(CACHE#9[9>@Sampling!B152]) || NOT(CACHE#10[10>@Sampling!B152]))
+Rebuilding support graph
+Read XMLSS, 5358 cells of which 1950 unique in 402 ms
+Created residual function MONTHLEN(2010,#NA)#239
+Created residual function MONTHLEN(2012,#NA)#240
+Created residual function MONTHLEN(2100,#NA)#241
+Created residual function SUB(2,#NA)#242
+The result sheet got evaluated
+Created residual function SUB(2,5)#243
+Created residual function MONTHLEN(#NA,2)#244
+Created residual function SUB(#NA,5)#245
+Created residual function SUB(2,#NA)#242(5)#246
+Created residual function BULLETPV(4,10,#NA)#247
+Created residual function GOALSEEKR(BULLETPV(4,10,#NA)#247,91,4)#248
+Created residual function FINDENDR(BULLETPV(4,10,#NA)#247,91,4)#249
+Created residual function FINDENDRAUX(BULLETPV(4,10,#NA)#247,4,#NA,2,91)#250
+Created residual function FINDENDRAUX(BULLETPV(4,10,#NA)#247,4,#NA,#NA,91)#251
+Created residual function GOALSEEKRAUX(BULLETPV(4,10,#NA)#247,4,#NA,#NA,#NA,91)#252
+Created residual function GOALSEEKRAUX(BULLETPV(4,10,#NA)#247,#NA,#NA,#NA,#NA,91)#253
+Setting EvalCond[@Goalseek!B91] = NOT(CACHE#0[ABS(@Goalseek!B87)<1E-07])
+Setting EvalCond[@Goalseek!B91] = NOT(CACHE#0[ABS(@Goalseek!B87)<1E-07])
+Created residual function NORMDENSITYGENERAL(#NA,0,1)#254
+Created residual function SUB(#NA,5)#245(2)#255
+Created residual function MONTHLEN(#NA,3)#256
+Created residual function REPT2(abc,#NA)#257
+Created residual function REPT3(abc,#NA)#258
+Created residual function REPT4(#NA,7)#259
+Created residual function REPT4(#NA,3)#260
+Created residual function REPT4(#NA,1)#261
+Created residual function REPT4(#NA,0)#262
+Created residual function REPT4(abc,#NA)#263
+Setting EvalCond[@Functions!B71] = NOT(CACHE#0[NOT(@Functions!B70)])
+Hello, world
+Created residual function QMCBS(20,20,0.08,0.08,0.25,2,#NA)#264
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
+The result sheet got evaluated
+Hello, world
