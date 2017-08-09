@@ -126,12 +126,15 @@ Let's see how well we're doing.
 * Overall Analysis
 
 #+begin_src R :session :results value
-  speedups <- t(sapply(list.files("arrays", pattern="out"),
+  files <- list.files("arrays", pattern="out")
+  speedups <- t(sapply(files,
                        function (file) {
                            f <- gsub(".out", "", file)
                            s <- getSpeedup("arrays", f)
-                           rbind(f, s[1], s[2])
+                           return(rbind(f, s[1], s[2]))
                        }))
+  speedups.row.names <- files
+  speedups
 #+end_src
 
 #+RESULTS:
@@ -154,3 +157,16 @@ Let's see how well we're doing.
 | Time.xml                        |  1.03850249246594 |   0.011969563831197 |
 | v1tmp.xml                       |  1.13224970460943 |  0.0261843664370754 |
 | WasteCalendarCalculat#A843B.xml | 0.892923891815097 |   0.104011986966532 |
+
+
+#+begin_src R :session :results graphics :file plots/errorbars.png
+  plot.bar <- function (cols) {
+      ts <- t(matrix(cols[,2]))
+      ts.names <- cols[,1]
+      return(barplot(ts))
+  }
+  plot.bar(speedups)
+#+end_src
+
+#+RESULTS:
+[[file:plots/errorbars.png]]
