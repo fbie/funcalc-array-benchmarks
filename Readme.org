@@ -218,11 +218,11 @@ I changed the number of benchmarks to run in ~testsdf.xml~ to 100.  Clearly, our
 We compute the theoretical maximum speedup by using Amdahl's law:
 
 #+begin_src R :session :exports both :results none
-  amdahl <- function (sWork, nThreads) {
-      return(1 / (sWork + (1 - sWork) / nThreads))
+  amdahl <- function (pWork, nThreads) {
+      return(1 / (1 - pWork + pWork / nThreads))
   }
   max.speedup <- function (formulas, arrayCells) {
-      return (amdahl((formulas - arrayCells) / formulas, 32))
+      return(amdahl(arrayCells / formulas, 32))
   }
 #+end_src
 
