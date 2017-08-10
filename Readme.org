@@ -169,4 +169,11 @@ computeSpeedups("examples/arrays", "examples/seq")
 | testsdf.xml  | 2.22242023724549 | 0.0790671703635237 |
 
 
+#+begin_src R :session :exports both :results graphics :file plots/barplot_examples.png
+plot.bar(computeSpeedups("examples/arrays", "examples/seq"), 2)
+#+end_src
+
+#+RESULTS:
+[[file:plots/barplot_examples.png]]
+
 I changed the number of benchmarks to run in ~testsdf.xml~ to 100.  Clearly, our large or computationally heavy sheets gain much more from cell array lifting than the real-life sheets.
