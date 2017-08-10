@@ -213,3 +213,34 @@ I changed the number of benchmarks to run in ~testsdf.xml~ to 100.  Clearly, our
 | funding.xml                     |  1636 |
 | iste-cs-2003-modeling-sim.xml   |  1991 |
 | modeling-3.xml                  |   213 |
+
+
+We compute the theoretical maximum speedup by using Amdahl's law:
+
+#+begin_src R :session :exports both :results none
+  amdahl <- function (sWork, nThreads) {
+      return(1 / (sWork + (1 - sWork) / nThreads))
+  }
+  max.speedup <- function (formulas, arrayCells) {
+      return (amdahl((formulas - arrayCells) / formulas, 32))
+  }
+#+end_src
+
+Let's assume a sheet of 3000 formulas of which 400 are in parallelizable cell arrays:
+
+#+begin_src R :session :exports both :results value
+  max.speedup(3000, 400)
+#+end_src
+
+#+RESULTS:
+: 1.14832535885167
+
+This is actually not too far from what we achieve on average, also counting sheets that are not converted:
+
+#+begin_src R :session :exports both :results value
+  speedups <- computeSpeedups("euses/arrays", "euses/seq")
+  mean(as.numeric(speedups[,2]))
+#+end_src
+
+#+RESULTS:
+: 1.06935591433261
