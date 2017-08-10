@@ -5,5 +5,5 @@ Setting EvalCond[@depreciation!J73] = CACHE#0[NOT(FLOOR(@depreciation!D69,1))]
 Setting EvalCond[@goalseek!C22] = (CACHE#58[@goalseek!D22<=0] || NOT(CACHE#59[@goalseek!D22<=0]))
 Setting EvalCond[@goalseek!B85] = NOT(CACHE#0[ABS(@goalseek!B81)<1E-07])
 Rebuilding support graph
-Lifted 8 intransitive, 0 transitive cell arrays.
-Read XMLSS, 68654 cells of which 4281 unique in 8369 ms
+Lifted 15376 intransitive, 0 transitive array cells.
+Read XMLSS, 68654 cells of which 4281 unique in 8431 ms

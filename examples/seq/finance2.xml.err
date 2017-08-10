@@ -11,4 +11,4 @@ Setting EvalCond[@depreciation!M138] = NOT(CACHE#0[@depreciation!K134>@depreciat
 Setting EvalCond[@goalseek!C22] = (CACHE#58[@goalseek!D22<=0] || NOT(CACHE#59[@goalseek!D22<=0]))
 Setting EvalCond[@goalseek!B85] = NOT(CACHE#0[ABS(@goalseek!B81)<1E-07])
 Rebuilding support graph
-Read XMLSS, 509182 cells of which 8789 unique in 3424 ms
+Read XMLSS, 509182 cells of which 8789 unique in 4707 ms

@@ -3,7 +3,7 @@ C:\Users\fbie\src\funcalc>msbuild /property:Configuration=Debug /t:Clean /m
 Microsoft (R) Build Engine version 14.0.25420.1
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 09-08-2017 08:21:42.
+Build started 10-08-2017 13:52:10.
      1>Project "C:\Users\fbie\src\funcalc\Funcalc.sln" on node 1 (Clean target(s)).
      1>ValidateSolutionConfiguration:
          Building solution configuration "Debug|Any CPU".
@@ -13,57 +13,26 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.17
+Time Elapsed 00:00:00.70
 
 C:\Users\fbie\src\funcalc>msbuild /property:Configuration=Release /t:Clean /m 
 Microsoft (R) Build Engine version 14.0.25420.1
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 09-08-2017 08:21:42.
+Build started 10-08-2017 13:52:11.
      1>Project "C:\Users\fbie\src\funcalc\Funcalc.sln" on node 1 (Clean target(s)).
      1>ValidateSolutionConfiguration:
          Building solution configuration "Release|Any CPU".
-     1>Project "C:\Users\fbie\src\funcalc\Funcalc.sln" (1) is building "C:\Users\fbie\src\funcalc\Funcalc.IO\Funcalc.IO.csproj" (2) on node 1 (Clean target(s)).
-     2>CoreClean:
-         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.IO\bin\Release\Funcalc.IO.dll".
-         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.IO\bin\Release\Funcalc.IO.pdb".
-         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.IO\bin\Release\Funcalc.dll".
-         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.IO\bin\Release\Funcalc.Funcalc.dll".
-         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.IO\bin\Release\Funcalc.pdb".
-         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.IO\bin\Release\Funcalc.Funcalc.pdb".
-         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.IO\obj\Release\Funcalc.IO.csprojResolveAssemblyReference.cache".
-         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.IO\obj\Release\Funcalc.IO.dll".
-         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.IO\obj\Release\Funcalc.IO.pdb".
-     1>Project "C:\Users\fbie\src\funcalc\Funcalc.sln" (1) is building "C:\Users\fbie\src\funcalc\Funcalc.App\Funcalc.App.csproj" (4) on node 2 (Clean target(s)).
-     4>CoreClean:
-         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.App\bin\Release\Funcalc.App.exe.config".
-     1>Project "C:\Users\fbie\src\funcalc\Funcalc.sln" (1) is building "C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj" (3) on node 4 (Clean target(s)).
+     1>Project "C:\Users\fbie\src\funcalc\Funcalc.sln" (1) is building "C:\Users\fbie\src\funcalc\Funcalc.App\Funcalc.App.csproj" (3) on node 2 (Clean target(s)).
      3>CoreClean:
-         Deleting file "C:\Users\fbie\src\funcalc\Funcalc\bin\Release\Funcalc.Funcalc.dll".
-     4>CoreClean:
+         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.App\bin\Release\Funcalc.App.exe.config".
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.App\bin\Release\Funcalc.App.exe".
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.App\bin\Release\Funcalc.App.pdb".
-     3>CoreClean:
-         Deleting file "C:\Users\fbie\src\funcalc\Funcalc\bin\Release\Funcalc.Funcalc.pdb".
-     4>CoreClean:
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.App\bin\Release\Externals.dll".
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.App\bin\Release\Funcalc.dll".
-     3>CoreClean:
-         Deleting file "C:\Users\fbie\src\funcalc\Funcalc\bin\Release\Funcalc.dll".
-     4>CoreClean:
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.App\bin\Release\Funcalc.Funcalc.dll".
-     3>CoreClean:
-         Deleting file "C:\Users\fbie\src\funcalc\Funcalc\bin\Release\Funcalc.pdb".
-     4>CoreClean:
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.App\bin\Release\Funcalc.GUI.dll".
-     3>CoreClean:
-         Deleting file "C:\Users\fbie\src\funcalc\Funcalc\obj\Release\Funcalc.csprojResolveAssemblyReference.cache".
-     4>CoreClean:
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.App\bin\Release\Funcalc.IO.dll".
-     3>CoreClean:
-         Deleting file "C:\Users\fbie\src\funcalc\Funcalc\obj\Release\Funcalc.Funcalc.dll".
-         Deleting file "C:\Users\fbie\src\funcalc\Funcalc\obj\Release\Funcalc.Funcalc.pdb".
-     4>CoreClean:
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.App\bin\Release\ClrTest.Reflection.ILVisualizer.dll".
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.App\bin\Release\ClrTest.Reflection.ILReader.dll".
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.App\bin\Release\Funcalc.pdb".
@@ -74,41 +43,49 @@ Build started 09-08-2017 08:21:42.
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.App\obj\Release\Funcalc.App.csprojResolveAssemblyReference.cache".
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.App\obj\Release\Funcalc.App.exe".
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.App\obj\Release\Funcalc.App.pdb".
-     1>Project "C:\Users\fbie\src\funcalc\Funcalc.sln" (1) is building "C:\Users\fbie\src\funcalc\Funcalc.GUI\Funcalc.GUI.csproj" (5) on node 3 (Clean target(s)).
-     5>CoreClean:
+     1>Project "C:\Users\fbie\src\funcalc\Funcalc.sln" (1) is building "C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj" (2) on node 4 (Clean target(s)).
+     2>CoreClean:
+         Deleting file "C:\Users\fbie\src\funcalc\Funcalc\bin\Release\Funcalc.Funcalc.dll".
+         Deleting file "C:\Users\fbie\src\funcalc\Funcalc\bin\Release\Funcalc.Funcalc.pdb".
+         Deleting file "C:\Users\fbie\src\funcalc\Funcalc\bin\Release\Funcalc.dll".
+         Deleting file "C:\Users\fbie\src\funcalc\Funcalc\bin\Release\Funcalc.pdb".
+         Deleting file "C:\Users\fbie\src\funcalc\Funcalc\obj\Release\Funcalc.csprojResolveAssemblyReference.cache".
+         Deleting file "C:\Users\fbie\src\funcalc\Funcalc\obj\Release\Funcalc.Funcalc.dll".
+         Deleting file "C:\Users\fbie\src\funcalc\Funcalc\obj\Release\Funcalc.Funcalc.pdb".
+     1>Project "C:\Users\fbie\src\funcalc\Funcalc.sln" (1) is building "C:\Users\fbie\src\funcalc\Funcalc.GUI\Funcalc.GUI.csproj" (4) on node 3 (Clean target(s)).
+     4>CoreClean:
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.GUI\bin\Release\Funcalc.GUI.dll".
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.GUI\bin\Release\Funcalc.GUI.pdb".
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.GUI\bin\Release\ClrTest.Reflection.ILReader.dll".
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.GUI\bin\Release\ClrTest.Reflection.ILVisualizer.dll".
+     1>Project "C:\Users\fbie\src\funcalc\Funcalc.sln" (1) is building "C:\Users\fbie\src\funcalc\Funcalc.Externals\Funcalc.Externals.csproj" (5) on node 5 (Clean target(s)).
+     5>CoreClean:
+         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.App\bin\Release\external\Externals.dll".
+     4>CoreClean:
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.GUI\bin\Release\Funcalc.dll".
+     5>CoreClean:
+         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.App\bin\Release\external\Externals.pdb".
+     4>CoreClean:
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.GUI\bin\Release\Funcalc.Funcalc.dll".
+     5>CoreClean:
+         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.Externals\obj\Release\Externals.dll".
+         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.Externals\obj\Release\Externals.pdb".
+     4>CoreClean:
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.GUI\bin\Release\Funcalc.IO.dll".
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.GUI\bin\Release\Funcalc.pdb".
-     1>Project "C:\Users\fbie\src\funcalc\Funcalc.sln" (1) is building "C:\Users\fbie\src\funcalc\Funcalc.Externals\Funcalc.Externals.csproj" (6) on node 5 (Clean target(s)).
-     6>CoreClean:
-         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.App\bin\Release\external\Externals.dll".
-     5>CoreClean:
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.GUI\bin\Release\Funcalc.Funcalc.pdb".
-     6>CoreClean:
-         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.App\bin\Release\external\Externals.pdb".
-     5>CoreClean:
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.GUI\bin\Release\Funcalc.IO.pdb".
-     6>CoreClean:
-         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.Externals\obj\Release\Externals.dll".
-     5>CoreClean:
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.GUI\obj\Release\Funcalc.GUI.csprojResolveAssemblyReference.cache".
-     6>CoreClean:
-         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.Externals\obj\Release\Externals.pdb".
-     5>CoreClean:
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.GUI\obj\Release\Funcalc.GUI.AboutBox.resources".
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.GUI\obj\Release\Funcalc.GUI.WorkbookForm.resources".
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.GUI\obj\Release\Funcalc.GUI.SdfForm.resources".
+     5>Done Building Project "C:\Users\fbie\src\funcalc\Funcalc.Externals\Funcalc.Externals.csproj" (Clean target(s)).
+     4>CoreClean:
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.GUI\obj\Release\Funcalc.GUI.csproj.GenerateResource.Cache".
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.GUI\obj\Release\Funcalc.GUI.dll".
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.GUI\obj\Release\Funcalc.GUI.pdb".
-     6>Done Building Project "C:\Users\fbie\src\funcalc\Funcalc.Externals\Funcalc.Externals.csproj" (Clean target(s)).
-     1>Project "C:\Users\fbie\src\funcalc\Funcalc.sln" (1) is building "C:\Users\fbie\src\funcalc\Funcalc.Corecalc\Funcalc.Corecalc.csproj" (7) on node 6 (Clean target(s)).
-     7>CoreClean:
+     1>Project "C:\Users\fbie\src\funcalc\Funcalc.sln" (1) is building "C:\Users\fbie\src\funcalc\Funcalc.Corecalc\Funcalc.Corecalc.csproj" (6) on node 6 (Clean target(s)).
+     6>CoreClean:
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.Corecalc\bin\Release\Funcalc.dll.config".
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.Corecalc\bin\Release\Funcalc.dll".
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.Corecalc\bin\Release\Funcalc.pdb".
@@ -119,24 +96,35 @@ Build started 09-08-2017 08:21:42.
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.Corecalc\obj\Release\Funcalc.Corecalc.csproj.GenerateResource.Cache".
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.Corecalc\obj\Release\Funcalc.dll".
          Deleting file "C:\Users\fbie\src\funcalc\Funcalc.Corecalc\obj\Release\Funcalc.pdb".
-     7>Done Building Project "C:\Users\fbie\src\funcalc\Funcalc.Corecalc\Funcalc.Corecalc.csproj" (Clean target(s)).
-     3>Done Building Project "C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj" (Clean target(s)).
-     2>Done Building Project "C:\Users\fbie\src\funcalc\Funcalc.IO\Funcalc.IO.csproj" (Clean target(s)).
-     5>Done Building Project "C:\Users\fbie\src\funcalc\Funcalc.GUI\Funcalc.GUI.csproj" (Clean target(s)).
-     4>Done Building Project "C:\Users\fbie\src\funcalc\Funcalc.App\Funcalc.App.csproj" (Clean target(s)).
+     6>Done Building Project "C:\Users\fbie\src\funcalc\Funcalc.Corecalc\Funcalc.Corecalc.csproj" (Clean target(s)).
+     2>Done Building Project "C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj" (Clean target(s)).
+     1>Project "C:\Users\fbie\src\funcalc\Funcalc.sln" (1) is building "C:\Users\fbie\src\funcalc\Funcalc.IO\Funcalc.IO.csproj" (7) on node 1 (Clean target(s)).
+     7>CoreClean:
+         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.IO\bin\Release\Funcalc.IO.dll".
+         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.IO\bin\Release\Funcalc.IO.pdb".
+         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.IO\bin\Release\Funcalc.dll".
+         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.IO\bin\Release\Funcalc.Funcalc.dll".
+         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.IO\bin\Release\Funcalc.pdb".
+         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.IO\bin\Release\Funcalc.Funcalc.pdb".
+         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.IO\obj\Release\Funcalc.IO.csprojResolveAssemblyReference.cache".
+         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.IO\obj\Release\Funcalc.IO.dll".
+         Deleting file "C:\Users\fbie\src\funcalc\Funcalc.IO\obj\Release\Funcalc.IO.pdb".
+     7>Done Building Project "C:\Users\fbie\src\funcalc\Funcalc.IO\Funcalc.IO.csproj" (Clean target(s)).
+     4>Done Building Project "C:\Users\fbie\src\funcalc\Funcalc.GUI\Funcalc.GUI.csproj" (Clean target(s)).
+     3>Done Building Project "C:\Users\fbie\src\funcalc\Funcalc.App\Funcalc.App.csproj" (Clean target(s)).
      1>Done Building Project "C:\Users\fbie\src\funcalc\Funcalc.sln" (Clean target(s)).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.20
+Time Elapsed 00:00:00.71
 
 C:\Users\fbie\src\funcalc>call %command% 
 Microsoft (R) Build Engine version 14.0.25420.1
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 09-08-2017 08:21:42.
+Build started 10-08-2017 13:52:12.
      1>Project "C:\Users\fbie\src\funcalc\Funcalc.sln" on node 1 (Rebuild target(s)).
      1>ValidateSolutionConfiguration:
          Building solution configuration "Release|Any CPU".
@@ -170,17 +158,17 @@ Build started 09-08-2017 08:21:42.
          Funcalc.Corecalc -> C:\Users\fbie\src\funcalc\Funcalc.Corecalc\bin\Release\Funcalc.dll
          Copying file from "obj\Release\Funcalc.pdb" to "bin\Release\Funcalc.pdb".
      2>Done Building Project "C:\Users\fbie\src\funcalc\Funcalc.Corecalc\Funcalc.Corecalc.csproj" (Rebuild target(s)).
-     1>Project "C:\Users\fbie\src\funcalc\Funcalc.sln" (1) is building "C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj" (5) on node 3 (Rebuild target(s)).
-     5>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1820,5): warning MSB3270: There was a mismatch between the processor architecture of the project being built "MSIL" and the processor architecture of the reference "C:\Users\fbie\src\funcalc\Funcalc.Corecalc\bin\Release\Funcalc.dll", "x86". This mismatch may cause runtime failures. Please consider changing the targeted processor architecture of your project through the Configuration Manager so as to align the processor architectures between your project and references, or take a dependency on references with a processor architecture that matches the targeted processor architecture of your project. [C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj]
-     5>GenerateTargetFrameworkMonikerAttribute:
+     1>Project "C:\Users\fbie\src\funcalc\Funcalc.sln" (1) is building "C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj" (7) on node 3 (Rebuild target(s)).
+     7>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1820,5): warning MSB3270: There was a mismatch between the processor architecture of the project being built "MSIL" and the processor architecture of the reference "C:\Users\fbie\src\funcalc\Funcalc.Corecalc\bin\Release\Funcalc.dll", "x86". This mismatch may cause runtime failures. Please consider changing the targeted processor architecture of your project through the Configuration Manager so as to align the processor architectures between your project and references, or take a dependency on references with a processor architecture that matches the targeted processor architecture of your project. [C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj]
+     7>GenerateTargetFrameworkMonikerAttribute:
        Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
        CoreCompile:
          C:\Program Files (x86)\MSBuild\14.0\bin\csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:NOPARALLEL /highentropyva+ /reference:C:\Users\fbie\src\funcalc\Funcalc.Corecalc\bin\Release\Funcalc.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /debug:full /optimize+ /out:obj\Release\Funcalc.Funcalc.dll /ruleset:"C:\Program Files (x86)\Microsoft Visual Studio 14.0\Team Tools\Static Analysis Tools\\Rule Sets\MinimumRecommendedRules.ruleset" /subsystemversion:6.00 /target:library /utf8output CellsInFuncs.cs DependencyGraph.cs PathConditions.cs Variable.cs HigherOrderFunction.cs FunctionValue.cs Sdf\SdfInfo.cs Sdf\SdfManager.cs Sdf\SdfTypes.cs Sdf\SdfWorkbook.cs CodeGen\CodeGenerate.cs CodeGen\ProgramLines.cs CodeGen\UnwrapInputCell.cs CodeGen\ComputeCell.cs CodeGen\CGExpr.cs CodeGen\CGExpressionBuilder.cs CodeGen\CGCellRef.cs CodeGen\CGCachedExpr.cs CodeGen\CGComposite.cs CodeGen\CGIf.cs CodeGen\CGChoose.cs CodeGen\CGAnd.cs CodeGen\CGOr.cs CodeGen\CGStrictOperation.cs CodeGen\CGFunctionCall.cs CodeGen\CGSdfCall.cs CodeGen\CGApply.cs CodeGen\CGExtern.cs CodeGen\CGNormalCellArea.cs CodeGen\CGArithmetic1.cs CodeGen\CGNot.cs CodeGen\CGNeg.cs CodeGen\CGArithmetic2.cs CodeGen\CGComparison.cs CodeGen\CGGreaterThan.cs CodeGen\CGLessThan.cs CodeGen\CGLessThanOrEqual.cs CodeGen\CGGreaterThanOrEqual.cs CodeGen\CGEqual.cs CodeGen\CGNotEqual.cs CodeGen\CGConst.cs CodeGen\CGTextConst.cs CodeGen\CGNumberConst.cs CodeGen\CGError.cs CodeGen\CGValueConst.cs CodeGen\CGClosure.cs CodeGen\CGNormalCellRef.cs CodeGen\Gen.cs CodeGen\FunctionInfo.cs CodeGen\MethodLookup.cs CodeGen\PEnv.cs CellArrayConverter\CellRange.cs CellArrayConverter\CellAddrSet.cs CellArrayConverter\CellArray.cs CellArrayConverter\CellArrayConverter.cs CellArrayConverter\RefMap.cs CellArrayConverter\RefOrientation.cs "C:\Users\fbie\AppData\Local\Temp\.NETFramework,Version=v4.5.AssemblyAttributes.cs"
          Using shared compilation with compiler from directory: C:\Program Files (x86)\MSBuild\14.0\bin
-     5>CodeGen\CGSdfCall.cs(83,37): warning CS0219: The variable 'allStatic' is assigned but its value is never used [C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj]
-     5>CellArrayConverter\CellAddrSet.cs(17,32): warning CS0169: The field 'CellAddrSet.sheet' is never used [C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj]
-     5>CellArrayConverter\CellArray.cs(24,27): warning CS0169: The field 'CellArray.rowStart' is never used [C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj]
-     5>CellArrayConverter\CellArray.cs(24,37): warning CS0169: The field 'CellArray.colStart' is never used [C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj]
+     7>CodeGen\CGSdfCall.cs(83,37): warning CS0219: The variable 'allStatic' is assigned but its value is never used [C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj]
+     7>CellArrayConverter\CellAddrSet.cs(17,32): warning CS0169: The field 'CellAddrSet.sheet' is never used [C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj]
+     7>CellArrayConverter\CellArray.cs(24,37): warning CS0169: The field 'CellArray.colStart' is never used [C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj]
+     7>CellArrayConverter\CellArray.cs(24,27): warning CS0169: The field 'CellArray.rowStart' is never used [C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj]
        _CopyFilesMarkedCopyLocal:
          Copying file from "C:\Users\fbie\src\funcalc\Funcalc.Corecalc\bin\Release\Funcalc.dll" to "bin\Release\Funcalc.dll".
          Copying file from "C:\Users\fbie\src\funcalc\Funcalc.Corecalc\bin\Release\Funcalc.pdb" to "bin\Release\Funcalc.pdb".
@@ -188,15 +176,15 @@ Build started 09-08-2017 08:21:42.
          Copying file from "obj\Release\Funcalc.Funcalc.dll" to "bin\Release\Funcalc.Funcalc.dll".
          Funcalc -> C:\Users\fbie\src\funcalc\Funcalc\bin\Release\Funcalc.Funcalc.dll
          Copying file from "obj\Release\Funcalc.Funcalc.pdb" to "bin\Release\Funcalc.Funcalc.pdb".
-     5>Done Building Project "C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj" (Rebuild target(s)).
-     1>Project "C:\Users\fbie\src\funcalc\Funcalc.sln" (1) is building "C:\Users\fbie\src\funcalc\Funcalc.IO\Funcalc.IO.csproj" (7) on node 6 (Rebuild target(s)).
-     7>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1820,5): warning MSB3270: There was a mismatch between the processor architecture of the project being built "MSIL" and the processor architecture of the reference "C:\Users\fbie\src\funcalc\Funcalc.Corecalc\bin\Release\Funcalc.dll", "x86". This mismatch may cause runtime failures. Please consider changing the targeted processor architecture of your project through the Configuration Manager so as to align the processor architectures between your project and references, or take a dependency on references with a processor architecture that matches the targeted processor architecture of your project. [C:\Users\fbie\src\funcalc\Funcalc.IO\Funcalc.IO.csproj]
-     7>GenerateTargetFrameworkMonikerAttribute:
+     7>Done Building Project "C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj" (Rebuild target(s)).
+     1>Project "C:\Users\fbie\src\funcalc\Funcalc.sln" (1) is building "C:\Users\fbie\src\funcalc\Funcalc.IO\Funcalc.IO.csproj" (6) on node 6 (Rebuild target(s)).
+     6>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1820,5): warning MSB3270: There was a mismatch between the processor architecture of the project being built "MSIL" and the processor architecture of the reference "C:\Users\fbie\src\funcalc\Funcalc.Corecalc\bin\Release\Funcalc.dll", "x86". This mismatch may cause runtime failures. Please consider changing the targeted processor architecture of your project through the Configuration Manager so as to align the processor architectures between your project and references, or take a dependency on references with a processor architecture that matches the targeted processor architecture of your project. [C:\Users\fbie\src\funcalc\Funcalc.IO\Funcalc.IO.csproj]
+     6>GenerateTargetFrameworkMonikerAttribute:
        Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
        CoreCompile:
          C:\Program Files (x86)\MSBuild\14.0\bin\csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:NOPARALLEL /highentropyva+ /reference:C:\Users\fbie\src\funcalc\Funcalc.Corecalc\bin\Release\Funcalc.dll /reference:C:\Users\fbie\src\funcalc\Funcalc\bin\Release\Funcalc.Funcalc.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /debug:full /optimize+ /out:obj\Release\Funcalc.IO.dll /ruleset:"C:\Program Files (x86)\Microsoft Visual Studio 14.0\Team Tools\Static Analysis Tools\\Rule Sets\MinimumRecommendedRules.ruleset" /subsystemversion:6.00 /target:library /utf8output IOFormat.cs WorkBookIO.cs XMLSSIOFormat.cs Coco\Parser.cs Coco\Scanner.cs CellToXML.cs "C:\Users\fbie\AppData\Local\Temp\.NETFramework,Version=v4.5.AssemblyAttributes.cs"
          Using shared compilation with compiler from directory: C:\Program Files (x86)\MSBuild\14.0\bin
-     7>CellToXML.cs(46,48): warning CS0168: The variable 'e' is declared but never used [C:\Users\fbie\src\funcalc\Funcalc.IO\Funcalc.IO.csproj]
+     6>CellToXML.cs(46,48): warning CS0168: The variable 'e' is declared but never used [C:\Users\fbie\src\funcalc\Funcalc.IO\Funcalc.IO.csproj]
        _CopyFilesMarkedCopyLocal:
          Copying file from "C:\Users\fbie\src\funcalc\Funcalc.Corecalc\bin\Release\Funcalc.dll" to "bin\Release\Funcalc.dll".
          Copying file from "C:\Users\fbie\src\funcalc\Funcalc\bin\Release\Funcalc.Funcalc.dll" to "bin\Release\Funcalc.Funcalc.dll".
@@ -206,7 +194,7 @@ Build started 09-08-2017 08:21:42.
          Copying file from "obj\Release\Funcalc.IO.dll" to "bin\Release\Funcalc.IO.dll".
          Funcalc.IO -> C:\Users\fbie\src\funcalc\Funcalc.IO\bin\Release\Funcalc.IO.dll
          Copying file from "obj\Release\Funcalc.IO.pdb" to "bin\Release\Funcalc.IO.pdb".
-     7>Done Building Project "C:\Users\fbie\src\funcalc\Funcalc.IO\Funcalc.IO.csproj" (Rebuild target(s)).
+     6>Done Building Project "C:\Users\fbie\src\funcalc\Funcalc.IO\Funcalc.IO.csproj" (Rebuild target(s)).
      1>Project "C:\Users\fbie\src\funcalc\Funcalc.sln" (1) is building "C:\Users\fbie\src\funcalc\Funcalc.GUI\Funcalc.GUI.csproj" (4) on node 4 (Rebuild target(s)).
      4>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1820,5): warning MSB3270: There was a mismatch between the processor architecture of the project being built "MSIL" and the processor architecture of the reference "C:\Users\fbie\src\funcalc\Funcalc.Corecalc\bin\Release\Funcalc.dll", "x86". This mismatch may cause runtime failures. Please consider changing the targeted processor architecture of your project through the Configuration Manager so as to align the processor architectures between your project and references, or take a dependency on references with a processor architecture that matches the targeted processor architecture of your project. [C:\Users\fbie\src\funcalc\Funcalc.GUI\Funcalc.GUI.csproj]
      4>CoreResGen:
@@ -233,9 +221,9 @@ Build started 09-08-2017 08:21:42.
          Funcalc.GUI -> C:\Users\fbie\src\funcalc\Funcalc.GUI\bin\Release\Funcalc.GUI.dll
          Copying file from "obj\Release\Funcalc.GUI.pdb" to "bin\Release\Funcalc.GUI.pdb".
      4>Done Building Project "C:\Users\fbie\src\funcalc\Funcalc.GUI\Funcalc.GUI.csproj" (Rebuild target(s)).
-     1>Project "C:\Users\fbie\src\funcalc\Funcalc.sln" (1) is building "C:\Users\fbie\src\funcalc\Funcalc.App\Funcalc.App.csproj" (6) on node 5 (Rebuild target(s)).
-     6>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1820,5): warning MSB3270: There was a mismatch between the processor architecture of the project being built "MSIL" and the processor architecture of the reference "C:\Users\fbie\src\funcalc\Funcalc.Corecalc\bin\Release\Funcalc.dll", "x86". This mismatch may cause runtime failures. Please consider changing the targeted processor architecture of your project through the Configuration Manager so as to align the processor architectures between your project and references, or take a dependency on references with a processor architecture that matches the targeted processor architecture of your project. [C:\Users\fbie\src\funcalc\Funcalc.App\Funcalc.App.csproj]
-     6>GenerateTargetFrameworkMonikerAttribute:
+     1>Project "C:\Users\fbie\src\funcalc\Funcalc.sln" (1) is building "C:\Users\fbie\src\funcalc\Funcalc.App\Funcalc.App.csproj" (5) on node 5 (Rebuild target(s)).
+     5>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1820,5): warning MSB3270: There was a mismatch between the processor architecture of the project being built "MSIL" and the processor architecture of the reference "C:\Users\fbie\src\funcalc\Funcalc.Corecalc\bin\Release\Funcalc.dll", "x86". This mismatch may cause runtime failures. Please consider changing the targeted processor architecture of your project through the Configuration Manager so as to align the processor architectures between your project and references, or take a dependency on references with a processor architecture that matches the targeted processor architecture of your project. [C:\Users\fbie\src\funcalc\Funcalc.App\Funcalc.App.csproj]
+     5>GenerateTargetFrameworkMonikerAttribute:
        Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
        CoreCompile:
          C:\Program Files (x86)\MSBuild\14.0\bin\csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /platform:anycpu32bitpreferred /errorreport:prompt /warn:4 /define:NOPARALLEL /highentropyva+ /reference:C:\Users\fbie\src\funcalc\Funcalc.App\bin\Release\external\Externals.dll /reference:C:\Users\fbie\src\funcalc\Funcalc.Corecalc\bin\Release\Funcalc.dll /reference:C:\Users\fbie\src\funcalc\Funcalc\bin\Release\Funcalc.Funcalc.dll /reference:C:\Users\fbie\src\funcalc\Funcalc.GUI\bin\Release\Funcalc.GUI.dll /reference:C:\Users\fbie\src\funcalc\Funcalc.IO\bin\Release\Funcalc.IO.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /debug:full /optimize+ /out:obj\Release\Funcalc.App.exe /ruleset:"C:\Program Files (x86)\Microsoft Visual Studio 14.0\Team Tools\Static Analysis Tools\\Rule Sets\MinimumRecommendedRules.ruleset" /subsystemversion:6.00 /target:exe /utf8output Program.cs "C:\Users\fbie\AppData\Local\Temp\.NETFramework,Version=v4.5.AssemblyAttributes.cs"
@@ -259,34 +247,34 @@ Build started 09-08-2017 08:21:42.
          Copying file from "obj\Release\Funcalc.App.exe" to "bin\Release\Funcalc.App.exe".
          Funcalc.App -> C:\Users\fbie\src\funcalc\Funcalc.App\bin\Release\Funcalc.App.exe
          Copying file from "obj\Release\Funcalc.App.pdb" to "bin\Release\Funcalc.App.pdb".
+     5>Done Building Project "C:\Users\fbie\src\funcalc\Funcalc.App\Funcalc.App.csproj" (Rebuild target(s)).
      1>Done Building Project "C:\Users\fbie\src\funcalc\Funcalc.sln" (Rebuild target(s)).
-     6>Done Building Project "C:\Users\fbie\src\funcalc\Funcalc.App\Funcalc.App.csproj" (Rebuild target(s)).
 
 Build succeeded.
 
        "C:\Users\fbie\src\funcalc\Funcalc.sln" (Rebuild target) (1) ->
-       "C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj" (Rebuild target) (5) ->
+       "C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj" (Rebuild target) (7) ->
        (ResolveAssemblyReferences target) -> 
          C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1820,5): warning MSB3270: There was a mismatch between the processor architecture of the project being built "MSIL" and the processor architecture of the reference "C:\Users\fbie\src\funcalc\Funcalc.Corecalc\bin\Release\Funcalc.dll", "x86". This mismatch may cause runtime failures. Please consider changing the targeted processor architecture of your project through the Configuration Manager so as to align the processor architectures between your project and references, or take a dependency on references with a processor architecture that matches the targeted processor architecture of your project. [C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj]
 
 
        "C:\Users\fbie\src\funcalc\Funcalc.sln" (Rebuild target) (1) ->
-       "C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj" (Rebuild target) (5) ->
+       "C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj" (Rebuild target) (7) ->
        (CoreCompile target) -> 
          CodeGen\CGSdfCall.cs(83,37): warning CS0219: The variable 'allStatic' is assigned but its value is never used [C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj]
          CellArrayConverter\CellAddrSet.cs(17,32): warning CS0169: The field 'CellAddrSet.sheet' is never used [C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj]
-         CellArrayConverter\CellArray.cs(24,27): warning CS0169: The field 'CellArray.rowStart' is never used [C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj]
          CellArrayConverter\CellArray.cs(24,37): warning CS0169: The field 'CellArray.colStart' is never used [C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj]
+         CellArrayConverter\CellArray.cs(24,27): warning CS0169: The field 'CellArray.rowStart' is never used [C:\Users\fbie\src\funcalc\Funcalc\Funcalc.csproj]
 
 
        "C:\Users\fbie\src\funcalc\Funcalc.sln" (Rebuild target) (1) ->
-       "C:\Users\fbie\src\funcalc\Funcalc.IO\Funcalc.IO.csproj" (Rebuild target) (7) ->
+       "C:\Users\fbie\src\funcalc\Funcalc.IO\Funcalc.IO.csproj" (Rebuild target) (6) ->
        (ResolveAssemblyReferences target) -> 
          C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1820,5): warning MSB3270: There was a mismatch between the processor architecture of the project being built "MSIL" and the processor architecture of the reference "C:\Users\fbie\src\funcalc\Funcalc.Corecalc\bin\Release\Funcalc.dll", "x86". This mismatch may cause runtime failures. Please consider changing the targeted processor architecture of your project through the Configuration Manager so as to align the processor architectures between your project and references, or take a dependency on references with a processor architecture that matches the targeted processor architecture of your project. [C:\Users\fbie\src\funcalc\Funcalc.IO\Funcalc.IO.csproj]
 
 
        "C:\Users\fbie\src\funcalc\Funcalc.sln" (Rebuild target) (1) ->
-       "C:\Users\fbie\src\funcalc\Funcalc.IO\Funcalc.IO.csproj" (Rebuild target) (7) ->
+       "C:\Users\fbie\src\funcalc\Funcalc.IO\Funcalc.IO.csproj" (Rebuild target) (6) ->
        (CoreCompile target) -> 
          CellToXML.cs(46,48): warning CS0168: The variable 'e' is declared but never used [C:\Users\fbie\src\funcalc\Funcalc.IO\Funcalc.IO.csproj]
 
@@ -298,13 +286,13 @@ Build succeeded.
 
 
        "C:\Users\fbie\src\funcalc\Funcalc.sln" (Rebuild target) (1) ->
-       "C:\Users\fbie\src\funcalc\Funcalc.App\Funcalc.App.csproj" (Rebuild target) (6) ->
+       "C:\Users\fbie\src\funcalc\Funcalc.App\Funcalc.App.csproj" (Rebuild target) (5) ->
          C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1820,5): warning MSB3270: There was a mismatch between the processor architecture of the project being built "MSIL" and the processor architecture of the reference "C:\Users\fbie\src\funcalc\Funcalc.Corecalc\bin\Release\Funcalc.dll", "x86". This mismatch may cause runtime failures. Please consider changing the targeted processor architecture of your project through the Configuration Manager so as to align the processor architectures between your project and references, or take a dependency on references with a processor architecture that matches the targeted processor architecture of your project. [C:\Users\fbie\src\funcalc\Funcalc.App\Funcalc.App.csproj]
 
     9 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.45
+Time Elapsed 00:00:02.47
 
 msbuild /property:Configuration=Release /p:DefineConstants=NOPARALLEL /t:Rebuild /m
 
