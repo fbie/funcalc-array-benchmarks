@@ -89,14 +89,15 @@ Let's see how well we're doing.
 | Stddev | 0.0396664158596318 |
 
 #+begin_src R :session :exports both :results graphics :file plots/MRP_Excel_array_plot.png
-  plot(getElapsed(array))
+  array <- getElapsed(readLog("euses/arrays", file))
+  plot(array)
 #+end_src
 
 #+RESULTS:
 [[file:plots/MRP_Excel_array_plot.png]]
 
 #+begin_src R :session :exports both :results graphics :file plots/MRP_Excel_array_hist.png
-  hist(getElapsed(array), freq=0.1)
+  hist(array, freq=0.1)
 #+end_src
 
 #+RESULTS:
