@@ -183,15 +183,14 @@ I changed the number of benchmarks to run in ~testsdf.xml~ to 100.  Clearly, our
 
 #+begin_src R :session :exports both :results value
   countFormulas <- function (file) {
-      formulas <- sum(sapply(scan(file,
-                                  what=character()),
+      formulas <- sum(sapply(scan(file, what=character()),
                              function (line) { return(grepl("Formula", line)) }))
-    return(t(c(basename(file), formulas)))
+    return(c(basename(file), formulas))
   }
-  t(sapply(list.files("~/Documents/funcalc-euses/",
-                    recursive=TRUE, pattern="xml$",
-                    full.names=TRUE),
-         countFormulas))
+  formulas <- t(sapply(list.files("~/Documents/funcalc-euses/",
+                                  recursive=TRUE, pattern="xml$",
+                                  full.names=TRUE),
+                       countFormulas))
 #+end_src
 
 #+RESULTS:
