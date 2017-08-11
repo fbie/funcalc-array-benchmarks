@@ -281,7 +281,7 @@ There seems to be something wrong with the formula count; how can the number of 
 #+begin_src R :session :exports both :results value
   fc0 <- formulas[sort.list(formulas[,1]),]
   fc <- subset(fc0, fc0[,1] %in% successful)
-  ratios <- cbind(fc, as.numeric(successful[,2]))
+  ratios <- cbind(fc, as.numeric(successful[,2]) + as.numeric(successful[,3]))
 #+end_src
 
 #+RESULTS:
@@ -291,9 +291,9 @@ There seems to be something wrong with the formula count; how can the number of 
 | Aggregate20Governanc#A8A51.xml  |  3546 | 2528 |
 | Financial-Projections.xml       |  3649 | 1836 |
 | funding.xml                     |  1636 |  471 |
-| high_2003_belg.xml                | 12861 | 2829 |
+| high_2003_belg.xml                | 12861 | 2928 |
 | iste-cs-2003-modeling-sim.xml   |  1991 |  400 |
-| MRP_Excel.xml                    |  4809 |  524 |
+| MRP_Excel.xml                    |  4809 | 1051 |
 | notes5CMISB200SP04H2KEY.xml     |  1557 | 1500 |
 | Test20Station20Powe#A90F3.xml   |  2164 | 1229 |
 | WasteCalendarCalculat#A843B.xml |   844 |  603 |
@@ -312,9 +312,9 @@ Now, we can compute the hypothetical bound.
 | Aggregate20Governanc#A8A51.xml  | 3.23245214220602 |
 | Financial-Projections.xml       | 1.95094566597607 |
 | funding.xml                     | 1.38677121135864 |
-| high_2003_belg.xml                | 1.27079878833915 |
+| high_2003_belg.xml                | 1.28295675594793 |
 | iste-cs-2003-modeling-sim.xml   | 1.24165887121921 |
-| MRP_Excel.xml                    | 1.11801458835837 |
+| MRP_Excel.xml                    | 1.26858301664372 |
 | notes5CMISB200SP04H2KEY.xml     | 14.9891696750903 |
 | Test20Station20Powe#A90F3.xml   | 2.22312112748403 |
 | WasteCalendarCalculat#A843B.xml | 3.24810583283223 |
@@ -336,9 +336,9 @@ How far are we from reaching the overly optimistic, hypothetical bound?  We comp
 | Aggregate20Governanc#A8A51.xml  |  0.790019919874086 |
 | Financial-Projections.xml       |  0.658645597114724 |
 | funding.xml                     |  0.331248922171328 |
-| high_2003_belg.xml                |  0.218468819266598 |
+| high_2003_belg.xml                |  0.225875016503221 |
 | iste-cs-2003-modeling-sim.xml   |  0.137365265599756 |
-| MRP_Excel.xml                    | 0.0620132485393531 |
+| MRP_Excel.xml                    |  0.173343125312861 |
 | notes5CMISB200SP04H2KEY.xml     |  0.939390002626301 |
 | Test20Station20Powe#A90F3.xml   |  0.487513782276187 |
 | WasteCalendarCalculat#A843B.xml |  0.704843117318591 |
