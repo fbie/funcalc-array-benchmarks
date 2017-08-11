@@ -13,15 +13,18 @@ The date at which the benchmarks have been run can be found in the file ~build.l
 How many arrays did the algorithm convert per sheet?
 
 #+begin_src R :session :exports both :results value
-  errs <- list.files(path="euses/arrays", pattern="err", full.names=TRUE)
-  lifts <- t(sapply(errs, (function (err) {
-      for (line in scan(err, what = character(), sep = "\n")) {
-          if (grepl("Lifted", line)) {
-              elems <- as.numeric(unlist(strsplit(line, " ")))
-              return(c(sub(".err", "", basename(err)), elems[2], elems[4]))
+  getLifts <- function (lpath) {
+      errs <- list.files(path=lpath, pattern="err", full.names=TRUE)
+      lifts <- t(sapply(errs, (function (err) {
+          for (line in scan(err, what = character(), sep = "\n")) {
+              if (grepl("Lifted", line)) {
+                  elems <- as.numeric(unlist(strsplit(line, " ")))
+                  return(c(sub(".err", "", basename(err)), elems[2], elems[4]))
+              }
           }
-      }
-  })))
+      })))
+  }
+  lifts <- getLifts("euses/arrays")
 #+end_src
 
 #+RESULTS:
@@ -345,3 +348,29 @@ How far are we from reaching the overly optimistic, hypothetical bound?  We comp
 
 
 Negative results probably mean that we exceed the hypothetical bound, which is good but weird.
+
+For synthetic sheets:
+
+#+begin_src R :session :exports both :results value
+  synthS <- computeSpeedups("examples/arrays", "examples/seq")
+  synthF <- cbind(countFormulas("~/src/funcalc-examples/applied/finance2.xml"),
+                  countFormulas("~/src/funcalc-examples/applied/finance.xml"),
+                  countFormulas("~/src/funcalc-examples/tests/testsdf.xml"))
+#+end_src
+
+#+RESULTS:
+| finance2.xml | finance.xml | testsdf.xml |
+|       106987 |       15943 |        3774 |
+
+#+begin_src R :session :exports both :results value
+  synthL <- getLifts("examples/arrays")
+  synthH <- max.speedup(as.numeric(synthF[2,]), as.numeric(synthL[,2]) + as.numeric(synthL[,3]))
+  cbind(synthS[,1], (as.numeric(synthH) - as.numeric(synthS[,2])) / as.numeric(synthH))
+#+end_src
+
+#+RESULTS:
+| finance2.xml | 0.924886703190993 |
+| finance.xml  | 0.849128836307796 |
+| testsdf.xml  | -1.01857483727986 |
+
+Again, negative results.  I think the approach is flawed since the measure of the possible parallel work is very inaccurate.  The idea would be more useful if we can find a better way to approximate parallel work.  Unless we can do that, we cannot use it.
