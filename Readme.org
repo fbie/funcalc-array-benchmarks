@@ -255,6 +255,7 @@ Let's just focus on those sheets actually have lifted cell arrays:
 
 #+begin_src R :session :exports both :results value
   successful <- lifts[as.numeric(lifts[,2]) > 0, 1:3]
+  successful <- successful[sort.list(successful[,1]),]
 #+end_src
 
 #+RESULTS:
