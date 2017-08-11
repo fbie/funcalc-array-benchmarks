@@ -110,6 +110,32 @@ Let's see how well we're doing.
 
 * Overall Analysis
 
+Let's just focus on those sheets actually have lifted cell arrays:
+
+#+begin_src R :session :exports both :results value
+  filterSuccessfulLifts <- function (lifts) {
+    successful <- lifts[as.numeric(lifts[,2]) + as.numeric(lifts[,3]) > 0, 1:3]
+    return(successful[sort.list(successful[,1]),])
+  }
+  successful <- filterSuccessfulLifts(lifts)
+#+end_src
+
+
+#+RESULTS:
+| 02rise.xml                      |  108 |   0 |
+| 2002Qvols.xml                   | 1280 |   0 |
+| 2004_PUBLIC_BUGS_INVENTORY.xml     | 4493 |   0 |
+| Aggregate20Governanc#A8A51.xml  | 2528 |   0 |
+| Financial-Projections.xml       | 1836 |   0 |
+| funding.xml                     |  471 |   0 |
+| high_2003_belg.xml                | 2829 |  99 |
+| iste-cs-2003-modeling-sim.xml   |  400 |   0 |
+| MRP_Excel.xml                    |  524 | 527 |
+| notes5CMISB200SP04H2KEY.xml     | 1500 |   0 |
+| Test20Station20Powe#A90F3.xml   | 1229 |   0 |
+| WasteCalendarCalculat#A843B.xml |  603 |   0 |
+
+
 #+begin_src R :session :exports both :results value
   computeSpeedups <- function (benchmark, baseline) {
     files <- list.files(benchmark, pattern="out")
@@ -124,27 +150,21 @@ Let's see how well we're doing.
   }
 
   speedups <- computeSpeedups("euses/arrays", "euses/seq")
+  speedupsF <- subset(speedups, speedups[,1] %in% successful)
 #+end_src
 
 #+RESULTS:
 | 02rise.xml                      |  1.29736282169393 |  0.0111646533392518 |
-| 2000_places_School.xml            |  1.07705290064321 |  0.0220693677206359 |
 | 2002Qvols.xml                   |  1.00485802863102 |  0.0551914400974847 |
 | 2004_PUBLIC_BUGS_INVENTORY.xml     |  2.26636076468086 |   0.038273942036477 |
 | Aggregate20Governanc#A8A51.xml  | 0.678750559823602 |  0.0369747742062879 |
-| EducAge25.xml                   | 0.984972603803309 |  0.0130643943104419 |
-| financial-model-spreadsheet.xml |  1.06706384155263 |  0.0197452704857905 |
 | Financial-Projections.xml       | 0.665963892870879 |   0.170498553241524 |
 | funding.xml                     | 0.927404742297863 |  0.0126249406063556 |
 | high_2003_belg.xml                | 0.993168877525272 | 0.00702673279166305 |
 | iste-cs-2003-modeling-sim.xml   |  1.07109807058989 |  0.0222093270795209 |
-| modeling-3.xml                  |  1.09676759798653 |  0.0797868099344791 |
 | MRP_Excel.xml                    |  1.04868287181988 | 0.00789956041152768 |
 | notes5CMISB200SP04H2KEY.xml     | 0.908493534641156 |  0.0303644427416775 |
-| ny_emit99.xml                    |  1.00186668463169 | 0.00576841446321526 |
 | Test20Station20Powe#A90F3.xml   |  1.13931893816619 |  0.0372818552054307 |
-| Time.xml                        |  1.04280247893402 |  0.0120191245812929 |
-| v1tmp.xml                       |  1.06846553376571 |  0.0247092959685579 |
 | WasteCalendarCalculat#A843B.xml | 0.958700792238062 |   0.111673990606713 |
 
 
@@ -154,7 +174,7 @@ Let's see how well we're doing.
       ts.names <- cols[,1]
       return(barplot(ts))
   }
-  plot.bar(speedups, 2)
+  plot.bar(speedupsF, 2)
 #+end_src
 
 #+RESULTS:
@@ -254,31 +274,6 @@ Keep in mind that the estimate is overly optimistic!  There are potential sequen
 
 * How well are we doing?
 
-Let's just focus on those sheets actually have lifted cell arrays:
-
-#+begin_src R :session :exports both :results value
-  filterSuccessfulLifts <- function (lifts) {
-    successful <- lifts[as.numeric(lifts[,2]) + as.numeric(lifts[,3]) > 0, 1:3]
-    return(successful[sort.list(successful[,1]),])
-  }
-  successful <- filterSuccessfulLifts(lifts)
-#+end_src
-
-#+RESULTS:
-| 02rise.xml                      |  108 |   0 |
-| 2002Qvols.xml                   | 1280 |   0 |
-| 2004_PUBLIC_BUGS_INVENTORY.xml     | 4493 |   0 |
-| Aggregate20Governanc#A8A51.xml  | 2528 |   0 |
-| Financial-Projections.xml       | 1836 |   0 |
-| funding.xml                     |  471 |   0 |
-| high_2003_belg.xml                | 2829 |  99 |
-| iste-cs-2003-modeling-sim.xml   |  400 |   0 |
-| MRP_Excel.xml                    |  524 | 527 |
-| notes5CMISB200SP04H2KEY.xml     | 1500 |   0 |
-| Test20Station20Powe#A90F3.xml   | 1229 |   0 |
-| WasteCalendarCalculat#A843B.xml |  603 |   0 |
-
-
 There seems to be something wrong with the formula count; how can the number of lifted cell array cells ever be larger than the number of overall formulas?  Turns out I just don't know R and data must be sorted alphabetically by file name.
 
 #+begin_src R :session :exports both :results value
@@ -328,8 +323,7 @@ How far are we from reaching the overly optimistic, hypothetical bound?  We comp
     \delta_speedup = (bound - speedup) / bound
 
 #+begin_src R :session :exports both :results value
-  s0 <- subset(speedups, speedups[,1] %in% successful)
-  cbind(s0[,1], (as.numeric(bounds[,2]) - as.numeric(s0[,2])) / as.numeric(bounds[,2]))
+  cbind(s0[,1], (as.numeric(bounds[,2]) - as.numeric(speedupsF[,2])) / as.numeric(bounds[,2]))
 #+end_src
 
 #+RESULTS:
