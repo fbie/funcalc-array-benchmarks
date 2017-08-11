@@ -254,8 +254,11 @@ Keep in mind that the estimate is overly optimistic!  There are potential sequen
 Let's just focus on those sheets actually have lifted cell arrays:
 
 #+begin_src R :session :exports both :results value
-  successful <- lifts[as.numeric(lifts[,2]) > 0, 1:3]
-  successful <- successful[sort.list(successful[,1]),]
+  filterSuccessfulLifts <- function (lifts) {
+    successful <- lifts[as.numeric(lifts[,2]) + as.numeric(lifts[,3]) > 0, 1:3]
+    return(successful[sort.list(successful[,1]),])
+  }
+  successful <- filterSuccessfulLifts(lifts)
 #+end_src
 
 #+RESULTS:
@@ -341,4 +344,4 @@ How far are we from reaching the overly optimistic, hypothetical bound?  We comp
 | WasteCalendarCalculat#A843B.xml |  0.704843117318591 |
 
 
-Negative results probably mean that we exceed the hypothetical bound.
+Negative results probably mean that we exceed the hypothetical bound, which is good but weird.
