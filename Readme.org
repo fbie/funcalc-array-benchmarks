@@ -1,4 +1,4 @@
-+#title: Parallel Funcalc Benchmarks
+#+title: Parallel Funcalc Benchmarks
 
 * Intro
 
