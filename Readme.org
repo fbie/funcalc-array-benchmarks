@@ -204,6 +204,15 @@ I changed the number of benchmarks to run in ~testsdf.xml~ to 100.  Clearly, our
 
 Also now for Filby's sheets:
 
+#+begin_src R :session :exports both :results value
+computeSpeedups("filby/arrays", "filby/seq")
+#+end_src
+
+#+RESULTS:
+| DNA.xml    | 0.807176156370794 | 0.0710962266408015 |
+| EUSE.xml   |  1.33580283542263 |  0.092334646020717 |
+| PLANCK.xml |  2.33002200568256 |  0.362830128081373 |
+
 #+begin_src R :session :exports both :results graphics :file plots/barplot_filby.png
 plot.bar(computeSpeedups("filby/arrays", "filby/seq"), 2)
 #+end_src
