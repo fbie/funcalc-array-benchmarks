@@ -213,6 +213,23 @@ computeSpeedups("filby/arrays", "filby/seq")
 | EUSE.xml   |  1.33580283542263 |  0.092334646020717 |
 | PLANCK.xml |  2.33002200568256 |  0.362830128081373 |
 
+Let's compare them with the speedup achieved via per-cell parallelism:
+
+#+begin_src R :session :exports both :results value
+  rbind(computeSpeedups("examples/cells", "examples/seq"),
+        computeSpeedups("filby/cells", "filby/seq"))
+#+end_src
+
+#+RESULTS:
+| finance2.xml | 0.349169601377365 |  0.033142860048034 |
+| finance.xml  | 0.143679949828006 | 0.0221177314455975 |
+| testsdf.xml  | 0.170397986407867 | 0.0255833552621607 |
+| DNA.xml      | 0.446559153011431 | 0.0134697219740229 |
+| EUSE.xml     | 0.170836984769614 | 0.0194000274627591 |
+| PLANCK.xml   | 0.586276036553474 |  0.046148612962701 |
+
+This should clearly show that our approach is useful!
+
 #+begin_src R :session :exports both :results graphics :file plots/barplot_filby.png
 plot.bar(computeSpeedups("filby/arrays", "filby/seq"), 2)
 #+end_src
