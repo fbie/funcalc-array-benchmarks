@@ -162,18 +162,28 @@ Let's just focus on those sheets actually have lifted cell arrays:
 #+end_src
 
 #+RESULTS:
-| 02rise.xml                      |  1.29736282169393 |  0.0111646533392518 |
-| 2002Qvols.xml                   |  1.00485802863102 |  0.0551914400974847 |
-| 2004_PUBLIC_BUGS_INVENTORY.xml     |  2.26636076468086 |   0.038273942036477 |
-| Aggregate20Governanc#A8A51.xml  | 0.678750559823602 |  0.0369747742062879 |
-| Financial-Projections.xml       | 0.665963892870879 |   0.170498553241524 |
-| funding.xml                     | 0.927404742297863 |  0.0126249406063556 |
-| high_2003_belg.xml                | 0.993168877525272 | 0.00702673279166305 |
-| iste-cs-2003-modeling-sim.xml   |  1.07109807058989 |  0.0222093270795209 |
-| MRP_Excel.xml                    |  1.04868287181988 | 0.00789956041152768 |
-| notes5CMISB200SP04H2KEY.xml     | 0.908493534641156 |  0.0303644427416775 |
-| Test20Station20Powe#A90F3.xml   |  1.13931893816619 |  0.0372818552054307 |
-| WasteCalendarCalculat#A843B.xml | 0.958700792238062 |   0.111673990606713 |
+| 02rise.xml                      |  1.71604661685316 |  0.083489661588483 |
+| 2002Qvols.xml                   |  1.54591366551479 |   0.12596419191869 |
+| 2004_PUBLIC_BUGS_INVENTORY.xml     |  3.01048131488743 |  0.207621121712286 |
+| Aggregate20Governanc#A8A51.xml  |  1.02007575865377 | 0.0619880124644313 |
+| Financial-Projections.xml       |  1.10509248170278 | 0.0743502246679451 |
+| funding.xml                     |  1.14498066265155 | 0.0683404378172223 |
+| high_2003_belg.xml                |  1.09759220971401 | 0.0518919741285841 |
+| iste-cs-2003-modeling-sim.xml   |  1.42502565440162 | 0.0967019411295706 |
+| MRP_Excel.xml                    |  1.17322813214782 | 0.0637724173754781 |
+| notes5CMISB200SP04H2KEY.xml     | 0.955152486245459 |  0.154800771836814 |
+| Test20Station20Powe#A90F3.xml   |  1.41538492036608 |  0.136333149222135 |
+| WasteCalendarCalculat#A843B.xml |  1.35982276322857 | 0.0744392417668905 |
+
+
+#+begin_src R :session :exports both :results value
+computeSpeedups("filby/arrays", "filby/seq")
+#+end_src
+
+#+RESULTS:
+| DNA.xml    | 1.42171663745819 | 0.0897769569794252 |
+| EUSE.xml   | 1.52017583735778 |  0.209792304356054 |
+| PLANCK.xml | 2.46933257907432 |  0.164119102062375 |
 
 
 #+begin_src R :session :exports both :results graphics :file plots/errorbars.png
