@@ -7,7 +7,7 @@ Setting EvalCond[@Lookup!B42] = NOT(CACHE#0[@Lookup!B41<=INDEX(@Lookup!B39,1,1)]
 Setting EvalCond[@Sampling!A155] = (NOT(CACHE#0[0>@Sampling!B152]) || NOT(CACHE#1[1>@Sampling!B152]) || NOT(CACHE#2[2>@Sampling!B152]) || NOT(CACHE#3[3>@Sampling!B152]) || NOT(CACHE#4[4>@Sampling!B152]) || NOT(CACHE#5[5>@Sampling!B152]) || NOT(CACHE#6[6>@Sampling!B152]) || NOT(CACHE#7[7>@Sampling!B152]) || NOT(CACHE#8[8>@Sampling!B152]) || NOT(CACHE#9[9>@Sampling!B152]) || NOT(CACHE#10[10>@Sampling!B152]))
 Rebuilding support graph
 Lifted 80 intransitive, 396 transitive array cells.
-Read XMLSS, 5358 cells of which 1950 unique in 418 ms
+Read XMLSS, 5358 cells of which 1950 unique in 341 ms
 Created residual function SUB(2,5)#244
 Created residual function SUB(2,#NA)#245
 Created residual function SUB(#NA,5)#246
