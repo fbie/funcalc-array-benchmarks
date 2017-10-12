@@ -108,6 +108,14 @@ Let's see how well we're doing.
 [[file:plots/MRP_Excel_array_hist.png]]
 
 
+#+begin_src R :session :exports both :results value
+mean(getElapsed(readLog("euses/seq", "Financial-Projections.xml")))
+#+end_src
+
+#+RESULTS:
+: 4.684867
+
+
 * Overall Analysis
 
 Let's just focus on those sheets actually have lifted cell arrays:
