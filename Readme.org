@@ -185,6 +185,16 @@ computeSpeedups("filby/arrays", "filby/seq")
 | EUSE.xml   | 1.52017583735778 |  0.209792304356054 |
 | PLANCK.xml | 2.46933257907432 |  0.164119102062375 |
 
+#+begin_src R :session :exports both :results value
+computeSpeedups("examples/arrays", "examples/seq")
+#+end_src
+
+#+RESULTS:
+| finance2.xml | 2.36581929898291 | 0.0768219899363916 |
+| finance.xml  | 2.73861018949888 | 0.0858913983098648 |
+| testsdf.xml  | 1.58341749524031 |  0.065073223527085 |
+
+
 
 #+begin_src R :session :exports both :results graphics :file plots/errorbars.png
   plot.bar <- function (cols, col) {
