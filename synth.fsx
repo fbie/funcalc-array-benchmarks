@@ -22,7 +22,7 @@ Fill.constant ((100, 0), (199,  0)) sheet 0
 Fill.constant ((100, 0), (100, 99)) sheet 0
 Fill.constant ((101, 1), (199, 99)) sheet "=SIN(RC[-100] + RC[-1] + R[-1]C + R[-1]C[-1])"
 
-if Workbook.save (sprintf "./synth-%s.xml" name) wb then
+if Workbook.save (sprintf "./synth-sheets/synth-%s.xml" name) wb then
     printfn "Saved."
 else
     printfn "Failed?"
