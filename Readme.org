@@ -432,3 +432,14 @@ For synthetic sheets:
 | testsdf.xml  | -1.01857483727986 |
 
 Again, negative results.  I think the approach is flawed since the measure of the possible parallel work is very inaccurate.  The idea would be more useful if we can find a better way to approximate parallel work.  Unless we can do that, we cannot use it.
+
+
+* Analysis for synthetic sheets:
+
+#+begin_src R :session :exports both :results value
+computeSpeedups("synth/arrays", "synth/seq")
+#+end_src
+
+#+RESULTS:
+| synth-map.xml    | 2.76519017944264 | 0.317389186303267 |
+| synth-prefix.xml | 11.2593319808209 | 0.881808947963057 |
