@@ -7,11 +7,11 @@ call git checkout origin/parallel
 call :benchmark %1 %2 logs\seq
 
 :: Parallel task per cell
-call git checkout origin/fbie/parallel-full-recalc
+call git checkout origin/fbie/parallel
 call :benchmark %1 %2 logs\cells
 
 :: Lifted cell arrays
-call git checkout origin/fbie/cell-array-transformation
+call git checkout origin/fbie/cell-array-transformation-dynamic
 call :benchmark %1 %2 logs\arrays
 
 exit /b
@@ -36,8 +36,8 @@ mkdir %log%
 
 :: Log build events
 echo Building...
-call build -c    >  %log%\build.log 2>&1
-call build -r -n >> %log%\build.log 2>&1
+call build -c >  %log%\build.log 2>&1
+call build -r >> %log%\build.log 2>&1
 
 echo Benchmarking...
 :: Benchmark Funcalc for each sheet.
