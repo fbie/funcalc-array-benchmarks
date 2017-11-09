@@ -1,2 +1,7 @@
-'Funcalc.App\bin\Release\Funcalc.App.exe' is not recognized as an internal or external command,
-operable program or batch file.
+Rebuilding support graph
+ERROR: Cannot convert a cell array that references a cell area.
+ERROR: Cannot convert a cell array that references a cell area.
+ERROR: Cannot convert a cell array that references a cell area.
+Lifted 1280 intransitive, 0 transitive array cells.
+Read XMLSS, 4646 cells of which 1541 unique in 214 ms
+Tracking 3980 recalculation roots

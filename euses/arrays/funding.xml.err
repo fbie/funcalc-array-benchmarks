@@ -1,2 +1,6 @@
-'Funcalc.App\bin\Release\Funcalc.App.exe' is not recognized as an internal or external command,
-operable program or batch file.
+Setting EvalCond[@Goalseek!C24] = (CACHE#58[@Goalseek!D24<=0] || NOT(CACHE#59[@Goalseek!D24<=0]))
+Rebuilding support graph
+ERROR: Cannot convert a cell array that references a cell area.
+Lifted 471 intransitive, 0 transitive array cells.
+Read XMLSS, 3406 cells of which 1118 unique in 211 ms
+Tracking 1951 recalculation roots
