@@ -89,8 +89,8 @@ Let's see how well we're doing.
 #+end_src
 
 #+RESULTS:
-| Mean   |  0.217591450849041 |
-| Stddev | 0.0103327627595994 |
+| Mean   |   0.210016093749682 |
+| Stddev | 0.00871641214747308 |
 
 #+begin_src R :session :exports both :results graphics :file plots/MRP_Excel_array_plot.png
   array <- getElapsed(readLog("euses/arrays", file))
@@ -162,18 +162,18 @@ Let's just focus on those sheets actually have lifted cell arrays:
 #+end_src
 
 #+RESULTS:
-| 02rise.xml                      | 0.0483026631436342 | 0.000896677911571293 |
-| 2002Qvols.xml                   | 0.0628361049181951 |  0.00248004225778232 |
-| 2004_PUBLIC_BUGS_INVENTORY.xml     |   7.12529356205679 |    0.388902937156212 |
-| Aggregate20Governanc#A8A51.xml  |  0.217591450849041 |   0.0103327627595994 |
-| Financial-Projections.xml       |   1.60913257542054 |    0.277174742283978 |
-| funding.xml                     |   2.01461928252841 |    0.139697141034313 |
-| high_2003_belg.xml                |   5.22148823315303 |     1.38347052806017 |
-| iste-cs-2003-modeling-sim.xml   |   1.77021497605175 |    0.170595038972795 |
-| MRP_Excel.xml                    |   1.27707533458186 |    0.445590584522356 |
-| notes5CMISB200SP04H2KEY.xml     |  0.373343800347874 |    0.147170022970762 |
-| Test20Station20Powe#A90F3.xml   |   1.68957864438205 |     0.16456635455758 |
-| WasteCalendarCalculat#A843B.xml |   1.01139015458673 |    0.140804524602274 |
+| 02rise.xml                      |  1.34490644710252 |   0.158014167680326 |
+| 2002Qvols.xml                   | 0.694249741760733 |   0.137175029391488 |
+| 2004_PUBLIC_BUGS_INVENTORY.xml     |  6.85936380538968 |   0.571583408793863 |
+| Aggregate20Governanc#A8A51.xml  | 0.210016093749682 | 0.00871641214747308 |
+| Financial-Projections.xml       |  1.88014474509917 |   0.180808977425677 |
+| funding.xml                     |  2.08669368095412 |   0.296765561084457 |
+| high_2003_belg.xml                |  5.74371196524241 |   0.688514266278094 |
+| iste-cs-2003-modeling-sim.xml   |   1.0106669466727 |   0.679109524134769 |
+| MRP_Excel.xml                    |  1.24892528257717 |   0.216038738873437 |
+| notes5CMISB200SP04H2KEY.xml     | 0.429710842213747 |  0.0651795574440024 |
+| Test20Station20Powe#A90F3.xml   |  1.92672972866354 |     0.1403861309712 |
+| WasteCalendarCalculat#A843B.xml |  1.10792818698769 |   0.134560419556825 |
 
 
 #+begin_src R :session :exports both :results graphics :file plots/errorbars.png
@@ -217,9 +217,16 @@ computeSpeedups("filby/arrays", "filby/seq")
 #+end_src
 
 #+RESULTS:
-| DNA.xml    | 0.47290073247592 |   0.0484521086061 |
-| EUSE.xml   |  1.8204594133478 | 0.258356423337812 |
-| PLANCK.xml | 3.86094373116585 | 0.497611898786606 |
+| DNA.xml    | 0.473295041915145 | 0.0165809151717108 |
+| EUSE.xml   |  2.15930067173602 |  0.214189523543113 |
+| PLANCK.xml |  4.08590992335041 |  0.290708998626479 |
+
+#+begin_src R :session :exports both :results graphics :file plots/barplot_filby.png
+  plot.bar(computeSpeedups("filby/arrays", "filby/seq"), 2)
+#+end_src
+
+#+RESULTS:
+[[file:plots/barplot_filby.png]]
 
 Let's compare them with the speedup achieved via per-cell parallelism:
 
