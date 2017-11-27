@@ -2,5 +2,5 @@ Rebuilding support graph
 ERROR: Cannot convert a cell array that references a cell area.
 ERROR: Cannot convert a cell array that references a cell area.
 Lifted 524 intransitive, 527 transitive array cells.
-Read XMLSS, 6463 cells of which 581 unique in 256 ms
-Tracking 4314 recalculation roots
+Read XMLSS, 6463 cells of which 581 unique in 266 ms
+Tracking 1513 recalculation roots
