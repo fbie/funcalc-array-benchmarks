@@ -6,5 +6,4 @@ ERROR: Cannot convert a cell array that references a cell area.
 ERROR: Cannot convert a cell array that references a cell area.
 ERROR: Cannot convert a cell array that references a cell area.
 Lifted 2528 intransitive, 0 transitive array cells.
-Read XMLSS, 18603 cells of which 2783 unique in 357 ms
-Tracking 7339 recalculation roots
+Read XMLSS, 18603 cells of which 2783 unique in 346 ms

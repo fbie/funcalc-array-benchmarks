@@ -1,4 +1,3 @@
 Rebuilding support graph
 Lifted 108 intransitive, 0 transitive array cells.
-Read XMLSS, 17839 cells of which 542 unique in 282 ms
-Tracking 6055 recalculation roots
+Read XMLSS, 17839 cells of which 542 unique in 224 ms
