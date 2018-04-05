@@ -1,0 +1,9 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe full 5 0 "C:\Users\fbie\src\funcalc-examples\synth\binary-tree-18-20.xml" 
+#benchmark:full iterations:5 file:C:\Users\fbie\src\funcalc-examples\synth\binary-tree-18-20.xml cores:48 max processors:0
+Rebuilding support graph
+full      	139837,4151ms	1
+full      	139837,5370ms	2
+full      	139872,0161ms	3
+full      	139802,8359ms	4
+full      	139875,3365ms	5

@@ -1,0 +1,9 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe full 5 48 "C:\Users\fbie\src\funcalc-examples\synth\binary-join-18-20.xml" 
+#benchmark:full iterations:5 file:C:\Users\fbie\src\funcalc-examples\synth\binary-join-18-20.xml cores:48 max processors:48
+Rebuilding support graph
+full      	141238,5426ms	1
+full      	141771,5586ms	2
+full      	141535,5648ms	3
+full      	141243,2860ms	4
+full      	141344,1190ms	5

@@ -1,0 +1,9 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe full 5 12 "C:\Users\fbie\src\funcalc-examples\synth\fork-300-1000-20.xml" 
+#benchmark:full iterations:5 file:C:\Users\fbie\src\funcalc-examples\synth\fork-300-1000-20.xml cores:48 max processors:12
+Rebuilding support graph
+full      	161747,5782ms	1
+full      	161605,0254ms	2
+full      	161767,3691ms	3
+full      	161749,0592ms	4
+full      	161611,4898ms	5
