@@ -1,0 +1,6 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe full 3 2 "C:\Users\fbie\src\funcalc-array-benchmarks\synth-sheets\map-400-400-20.xml" 
+#benchmark:full iterations:3 file:C:\Users\fbie\src\funcalc-array-benchmarks\synth-sheets\map-400-400-20.xml cores:48 max processors:2
+full      	38934,4992ms	1
+full      	34976,0884ms	2
+full      	36235,7669ms	3
