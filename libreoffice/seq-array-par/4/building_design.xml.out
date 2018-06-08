@@ -1,0 +1,6 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe full 3 4 "C:\Users\fbie\src\funcalc-examples\benchmarks\libreoffice_spreadsheets\building_design.xml" 
+#benchmark:full iterations:3 file:C:\Users\fbie\src\funcalc-examples\benchmarks\libreoffice_spreadsheets\building_design.xml cores:48 max processors:4
+full      	 2389,0205ms	1
+full      	 2376,7226ms	2
+full      	 2370,7633ms	3

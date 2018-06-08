@@ -1,0 +1,6 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe full 3 48 "C:\Users\fbie\src\funcalc-examples\benchmarks\libreoffice_spreadsheets\stock_history.xml" 
+#benchmark:full iterations:3 file:C:\Users\fbie\src\funcalc-examples\benchmarks\libreoffice_spreadsheets\stock_history.xml cores:48 max processors:48
+full      	 2650,5513ms	1
+full      	 2651,9898ms	2
+full      	 2654,8270ms	3

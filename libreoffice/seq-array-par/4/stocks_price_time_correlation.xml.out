@@ -1,0 +1,6 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe full 3 4 "C:\Users\fbie\src\funcalc-examples\benchmarks\libreoffice_spreadsheets\stocks_price_time_correlation.xml" 
+#benchmark:full iterations:3 file:C:\Users\fbie\src\funcalc-examples\benchmarks\libreoffice_spreadsheets\stocks_price_time_correlation.xml cores:48 max processors:4
+full      	258552,1432ms	1
+full      	306641,5367ms	2
+full      	317396,2323ms	3

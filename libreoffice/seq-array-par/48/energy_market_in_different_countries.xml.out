@@ -1,0 +1,6 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe full 3 48 "C:\Users\fbie\src\funcalc-examples\benchmarks\libreoffice_spreadsheets\energy_market_in_different_countries.xml" 
+#benchmark:full iterations:3 file:C:\Users\fbie\src\funcalc-examples\benchmarks\libreoffice_spreadsheets\energy_market_in_different_countries.xml cores:48 max processors:48
+full      	455890,2058ms	1
+full      	542880,6199ms	2
+full      	585894,2927ms	3
