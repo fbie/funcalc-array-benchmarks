@@ -1,6 +1,6 @@
 
 C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe full 3 4 "C:\Users\fbie\src\funcalc-examples\benchmarks\libreoffice_spreadsheets\ground_water_daily.xml" 
 #benchmark:full iterations:3 file:C:\Users\fbie\src\funcalc-examples\benchmarks\libreoffice_spreadsheets\ground_water_daily.xml cores:48 max processors:4
-full      	 5615,2315ms	1
-full      	 5610,1827ms	2
-full      	 5613,6448ms	3
+full      	60036,0772ms	1
+full      	60058,2942ms	2
+full      	60029,7993ms	3
