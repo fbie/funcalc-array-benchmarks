@@ -1,0 +1,6 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe full 3 4 "C:\Users\fbie\src\funcalc-array-benchmarks\synth-sheets\prefix-200-200-22.xml" 
+#benchmark:full iterations:3 file:C:\Users\fbie\src\funcalc-array-benchmarks\synth-sheets\prefix-200-200-22.xml cores:48 max processors:4
+full      	32062,2486ms	1
+full      	32067,0483ms	2
+full      	32051,6879ms	3
