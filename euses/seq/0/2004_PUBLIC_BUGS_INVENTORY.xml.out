@@ -1,0 +1,8 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe full 5 0 "C:\Users\fbie\src\funcalc-euses\database\processed\2004_PUBLIC_BUGS_INVENTORY.xml" 
+#benchmark:full iterations:5 file:C:\Users\fbie\src\funcalc-euses\database\processed\2004_PUBLIC_BUGS_INVENTORY.xml cores:48 max processors:0
+full      	    8,9226ms	1
+full      	    8,9705ms	2
+full      	    8,8603ms	3
+full      	    8,8474ms	4
+full      	    8,8473ms	5

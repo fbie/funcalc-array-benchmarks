@@ -1,0 +1,8 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe full 5 48 "C:\Users\fbie\src\funcalc-euses\modeling\processed\iste-cs-2003-modeling-sim.xml" 
+#benchmark:full iterations:5 file:C:\Users\fbie\src\funcalc-euses\modeling\processed\iste-cs-2003-modeling-sim.xml cores:48 max processors:48
+full      	    2,5151ms	1
+full      	    1,5265ms	2
+full      	    1,5068ms	3
+full      	    1,5115ms	4
+full      	    1,5071ms	5

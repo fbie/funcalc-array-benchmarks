@@ -1,0 +1,8 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe full 5 16 "C:\Users\fbie\src\funcalc-euses\filby\processed\DNA.xml" 
+#benchmark:full iterations:5 file:C:\Users\fbie\src\funcalc-euses\filby\processed\DNA.xml cores:48 max processors:16
+full      	    3,7969ms	1
+full      	    3,9041ms	2
+full      	    3,9198ms	3
+full      	    3,9399ms	4
+full      	    3,8389ms	5

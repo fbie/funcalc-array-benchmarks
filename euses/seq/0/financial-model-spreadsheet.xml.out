@@ -1,0 +1,8 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe full 5 0 "C:\Users\fbie\src\funcalc-euses\financial\processed\financial-model-spreadsheet.xml" 
+#benchmark:full iterations:5 file:C:\Users\fbie\src\funcalc-euses\financial\processed\financial-model-spreadsheet.xml cores:48 max processors:0
+full      	    1,7569ms	1
+full      	    1,7370ms	2
+full      	    1,7288ms	3
+full      	    1,7261ms	4
+full      	    1,7235ms	5

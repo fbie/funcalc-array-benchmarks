@@ -1,0 +1,8 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe full 5 16 "C:\Users\fbie\src\funcalc-euses\inventory\processed\ny_emit99.xml" 
+#benchmark:full iterations:5 file:C:\Users\fbie\src\funcalc-euses\inventory\processed\ny_emit99.xml cores:48 max processors:16
+full      	    8,0426ms	1
+full      	    7,4766ms	2
+full      	    7,2418ms	3
+full      	    7,2752ms	4
+full      	    7,2879ms	5

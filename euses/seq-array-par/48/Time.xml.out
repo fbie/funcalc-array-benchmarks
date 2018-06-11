@@ -1,0 +1,8 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe full 5 48 "C:\Users\fbie\src\funcalc-euses\inventory\processed\Time.xml" 
+#benchmark:full iterations:5 file:C:\Users\fbie\src\funcalc-euses\inventory\processed\Time.xml cores:48 max processors:48
+full      	    2,6584ms	1
+full      	    2,6603ms	2
+full      	    2,6386ms	3
+full      	    2,6462ms	4
+full      	    2,6595ms	5

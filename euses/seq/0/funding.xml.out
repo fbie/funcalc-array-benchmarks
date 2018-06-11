@@ -1,0 +1,8 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe full 5 0 "C:\Users\fbie\src\funcalc-euses\modeling\processed\funding.xml" 
+#benchmark:full iterations:5 file:C:\Users\fbie\src\funcalc-euses\modeling\processed\funding.xml cores:48 max processors:0
+full      	    2,3684ms	1
+full      	    2,3969ms	2
+full      	    2,3638ms	3
+full      	    2,3687ms	4
+full      	    2,3683ms	5

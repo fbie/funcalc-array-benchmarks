@@ -1,0 +1,8 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe full 5 0 "C:\Users\fbie\src\funcalc-euses\database\processed\Aggregate20Governanc#A8A51.xml" 
+#benchmark:full iterations:5 file:C:\Users\fbie\src\funcalc-euses\database\processed\Aggregate20Governanc#A8A51.xml cores:48 max processors:0
+full      	   79,4787ms	1
+full      	   79,8129ms	2
+full      	   82,5783ms	3
+full      	   79,4939ms	4
+full      	   79,5188ms	5

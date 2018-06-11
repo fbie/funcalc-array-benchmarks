@@ -1,0 +1,8 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe full 5 0 "C:\Users\fbie\src\funcalc-euses\inventory\processed\MRP_Excel.xml" 
+#benchmark:full iterations:5 file:C:\Users\fbie\src\funcalc-euses\inventory\processed\MRP_Excel.xml cores:48 max processors:0
+full      	    7,3235ms	1
+full      	    7,3846ms	2
+full      	    7,3440ms	3
+full      	    7,3216ms	4
+full      	    7,3540ms	5

@@ -1,0 +1,8 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe full 5 48 "C:\Users\fbie\src\funcalc-euses\financial\processed\Financial-Projections.xml" 
+#benchmark:full iterations:5 file:C:\Users\fbie\src\funcalc-euses\financial\processed\Financial-Projections.xml cores:48 max processors:48
+full      	    3,2574ms	1
+full      	    3,2945ms	2
+full      	    3,2719ms	3
+full      	    3,2420ms	4
+full      	    3,2779ms	5

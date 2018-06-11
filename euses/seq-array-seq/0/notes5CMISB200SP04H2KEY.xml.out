@@ -1,0 +1,8 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe full 5 0 "C:\Users\fbie\src\funcalc-euses\homework\processed\notes5CMISB200SP04H2KEY.xml" 
+#benchmark:full iterations:5 file:C:\Users\fbie\src\funcalc-euses\homework\processed\notes5CMISB200SP04H2KEY.xml cores:48 max processors:0
+full      	    5,8035ms	1
+full      	    5,7792ms	2
+full      	    5,7197ms	3
+full      	    5,7144ms	4
+full      	    5,7101ms	5

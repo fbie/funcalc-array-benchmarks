@@ -1,0 +1,8 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe full 5 16 "C:\Users\fbie\src\funcalc-euses\financial\processed\02rise.xml" 
+#benchmark:full iterations:5 file:C:\Users\fbie\src\funcalc-euses\financial\processed\02rise.xml cores:48 max processors:16
+full      	    6,5485ms	1
+full      	    6,5568ms	2
+full      	    6,6843ms	3
+full      	    6,6373ms	4
+full      	    6,5515ms	5

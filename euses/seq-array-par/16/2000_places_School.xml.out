@@ -1,0 +1,8 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe full 5 16 "C:\Users\fbie\src\funcalc-euses\grades\processed\2000_places_School.xml" 
+#benchmark:full iterations:5 file:C:\Users\fbie\src\funcalc-euses\grades\processed\2000_places_School.xml cores:48 max processors:16
+full      	    0,9822ms	1
+full      	    0,9784ms	2
+full      	    0,9830ms	3
+full      	    0,9795ms	4
+full      	    0,9777ms	5

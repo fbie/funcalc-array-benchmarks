@@ -1,0 +1,8 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe full 5 16 "C:\Users\fbie\src\funcalc-euses\filby\processed\EUSE.xml" 
+#benchmark:full iterations:5 file:C:\Users\fbie\src\funcalc-euses\filby\processed\EUSE.xml cores:48 max processors:16
+full      	    0,5185ms	1
+full      	    0,5231ms	2
+full      	    0,4695ms	3
+full      	    0,4497ms	4
+full      	    0,4337ms	5
