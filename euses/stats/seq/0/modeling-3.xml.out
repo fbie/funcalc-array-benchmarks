@@ -1,0 +1,6 @@
+
+G:\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe load 1 0 "E:\funcalc-euses\modeling\processed\modeling-3.xml" 
+#benchmark:load iterations:1 file:E:\funcalc-euses\modeling\processed\modeling-3.xml cores:2 max processors:0
+Rebuilding support graph
+Lifted 0 intransitive, 0 transitive array cells of 8 found.
+Read XMLSS, 323 cells of which 78 unique in 178 ms

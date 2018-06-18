@@ -1,0 +1,6 @@
+
+G:\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe load 1 0 "G:\funcalc-examples\benchmarks\libreoffice_spreadsheets\energy_market_in_different_countries.xml" 
+#benchmark:load iterations:1 file:G:\funcalc-examples\benchmarks\libreoffice_spreadsheets\energy_market_in_different_countries.xml cores:2 max processors:0
+Rebuilding support graph
+Lifted 76 intransitive, 0 transitive array cells of 147 found.
+Read XMLSS, 1865054 cells of which 6997 unique in 64373 ms

@@ -1,0 +1,6 @@
+
+G:\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe load 1 0 "E:\funcalc-euses\filby\processed\PLANCK.xml" 
+#benchmark:load iterations:1 file:E:\funcalc-euses\filby\processed\PLANCK.xml cores:2 max processors:0
+Rebuilding support graph
+Lifted 2 intransitive, 0 transitive array cells of 5 found.
+Read XMLSS, 1061 cells of which 129 unique in 298 ms

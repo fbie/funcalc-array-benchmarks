@@ -1,0 +1,5 @@
+commit acbd2630e642736aee7fe56430f86a9d22b0e122
+Author: Florian Biermann <fbie@itu.dk>
+Date:   Fri Jun 15 13:25:25 2018 +0200
+
+    Only take into account ranges that contain more than once cell

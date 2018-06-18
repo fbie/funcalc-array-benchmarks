@@ -1,0 +1,6 @@
+
+G:\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe load 1 0 "G:\funcalc-examples\benchmarks\libreoffice_spreadsheets\grossprofit_supermarkets.xml" 
+#benchmark:load iterations:1 file:G:\funcalc-examples\benchmarks\libreoffice_spreadsheets\grossprofit_supermarkets.xml cores:2 max processors:0
+Rebuilding support graph
+Lifted 9 intransitive, 0 transitive array cells of 78 found.
+Read XMLSS, 315340 cells of which 28499 unique in 213972 ms

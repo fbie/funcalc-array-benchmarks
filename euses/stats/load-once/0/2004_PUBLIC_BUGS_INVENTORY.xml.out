@@ -1,0 +1,6 @@
+
+G:\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe load-once 0 0 "E:\funcalc-euses\database\processed\2004_PUBLIC_BUGS_INVENTORY.xml" 
+#benchmark:load-once iterations:0 file:E:\funcalc-euses\database\processed\2004_PUBLIC_BUGS_INVENTORY.xml cores:2 max processors:0
+Rebuilding support graph
+Lifted 4 intransitive, 0 transitive arrays of 5 found.
+Read XMLSS, 86939 cells of which 27353 unique in 1451 ms

@@ -1,0 +1,6 @@
+
+G:\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe load 1 0 "E:\funcalc-euses\homework\processed\Test20Station20Powe#A90F3.xml" 
+#benchmark:load iterations:1 file:E:\funcalc-euses\homework\processed\Test20Station20Powe#A90F3.xml cores:2 max processors:0
+Rebuilding support graph
+Lifted 9 intransitive, 0 transitive array cells of 248 found.
+Read XMLSS, 5517 cells of which 806 unique in 365 ms

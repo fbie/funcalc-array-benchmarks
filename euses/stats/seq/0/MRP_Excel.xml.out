@@ -1,0 +1,6 @@
+
+G:\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe load 1 0 "E:\funcalc-euses\inventory\processed\MRP_Excel.xml" 
+#benchmark:load iterations:1 file:E:\funcalc-euses\inventory\processed\MRP_Excel.xml cores:2 max processors:0
+Rebuilding support graph
+Lifted 7 intransitive, 6 transitive array cells of 110 found.
+Read XMLSS, 6493 cells of which 597 unique in 610 ms

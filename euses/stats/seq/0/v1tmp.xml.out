@@ -1,0 +1,6 @@
+
+G:\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe load 1 0 "E:\funcalc-euses\homework\processed\v1tmp.xml" 
+#benchmark:load iterations:1 file:E:\funcalc-euses\homework\processed\v1tmp.xml cores:2 max processors:0
+Rebuilding support graph
+Lifted 0 intransitive, 0 transitive array cells of 57 found.
+Read XMLSS, 1369 cells of which 230 unique in 184 ms

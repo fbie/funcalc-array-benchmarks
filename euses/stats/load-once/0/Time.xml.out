@@ -1,0 +1,6 @@
+
+G:\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe load-once 0 0 "E:\funcalc-euses\inventory\processed\Time.xml" 
+#benchmark:load-once iterations:0 file:E:\funcalc-euses\inventory\processed\Time.xml cores:2 max processors:0
+Rebuilding support graph
+Lifted 1 intransitive, 0 transitive arrays of 73 found.
+Read XMLSS, 10302 cells of which 142 unique in 374 ms

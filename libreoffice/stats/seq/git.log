@@ -1,0 +1,5 @@
+commit dc54923db5e2f0fc2b2884e0550be15bbb95cc32
+Author: Florian Biermann <fbie@itu.dk>
+Date:   Mon Jun 11 13:44:02 2018 +0200
+
+    Report number of lifted cell arrays correctly

@@ -1,0 +1,6 @@
+
+G:\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe load-once 0 0 "G:\funcalc-examples\benchmarks\libreoffice_spreadsheets\ground_water_daily.xml" 
+#benchmark:load-once iterations:0 file:G:\funcalc-examples\benchmarks\libreoffice_spreadsheets\ground_water_daily.xml cores:2 max processors:0
+Rebuilding support graph
+Lifted 12 intransitive, 0 transitive arrays of 12 found.
+Read XMLSS, 474112 cells of which 20722 unique in 320121 ms

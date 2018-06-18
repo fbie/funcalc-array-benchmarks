@@ -1,0 +1,6 @@
+
+G:\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe load 1 0 "E:\funcalc-euses\grades\processed\2000_places_School.xml" 
+#benchmark:load iterations:1 file:E:\funcalc-euses\grades\processed\2000_places_School.xml cores:2 max processors:0
+Rebuilding support graph
+Lifted 0 intransitive, 0 transitive array cells of 45 found.
+Read XMLSS, 4136 cells of which 740 unique in 202 ms

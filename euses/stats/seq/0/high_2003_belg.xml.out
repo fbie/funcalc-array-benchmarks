@@ -1,0 +1,7 @@
+
+G:\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe load 1 0 "E:\funcalc-euses\database\processed\high_2003_belg.xml" 
+#benchmark:load iterations:1 file:E:\funcalc-euses\database\processed\high_2003_belg.xml cores:2 max processors:0
+Setting EvalCond[@Lookup!B42] = NOT(CACHE#0[@Lookup!B41<=INDEX(@Lookup!B39,1,1)])
+Rebuilding support graph
+Lifted 16 intransitive, 1 transitive array cells of 125 found.
+Read XMLSS, 29809 cells of which 4789 unique in 2883 ms

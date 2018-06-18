@@ -1,0 +1,6 @@
+
+G:\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe load-once 0 0 "E:\funcalc-euses\database\processed\Aggregate20Governanc#A8A51.xml" 
+#benchmark:load-once iterations:0 file:E:\funcalc-euses\database\processed\Aggregate20Governanc#A8A51.xml cores:2 max processors:0
+Rebuilding support graph
+Lifted 36 intransitive, 0 transitive arrays of 31 found.
+Read XMLSS, 18790 cells of which 2789 unique in 772 ms

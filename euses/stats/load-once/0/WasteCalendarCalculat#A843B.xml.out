@@ -1,0 +1,6 @@
+
+G:\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe load-once 0 0 "E:\funcalc-euses\inventory\processed\WasteCalendarCalculat#A843B.xml" 
+#benchmark:load-once iterations:0 file:E:\funcalc-euses\inventory\processed\WasteCalendarCalculat#A843B.xml cores:2 max processors:0
+Rebuilding support graph
+Lifted 4 intransitive, 0 transitive arrays of 8 found.
+Read XMLSS, 10142 cells of which 80 unique in 306 ms

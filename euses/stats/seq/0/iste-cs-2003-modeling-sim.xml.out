@@ -1,0 +1,6 @@
+
+G:\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe load 1 0 "E:\funcalc-euses\modeling\processed\iste-cs-2003-modeling-sim.xml" 
+#benchmark:load iterations:1 file:E:\funcalc-euses\modeling\processed\iste-cs-2003-modeling-sim.xml cores:2 max processors:0
+Rebuilding support graph
+Lifted 2 intransitive, 0 transitive array cells of 66 found.
+Read XMLSS, 2381 cells of which 248 unique in 341 ms

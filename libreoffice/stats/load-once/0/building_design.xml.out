@@ -1,0 +1,6 @@
+
+G:\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe load-once 0 0 "G:\funcalc-examples\benchmarks\libreoffice_spreadsheets\building_design.xml" 
+#benchmark:load-once iterations:0 file:G:\funcalc-examples\benchmarks\libreoffice_spreadsheets\building_design.xml cores:2 max processors:0
+Rebuilding support graph
+Lifted 6 intransitive, 0 transitive arrays of 6 found.
+Read XMLSS, 234911 cells of which 39641 unique in 83845 ms

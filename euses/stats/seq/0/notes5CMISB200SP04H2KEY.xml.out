@@ -1,0 +1,7 @@
+
+G:\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe load 1 0 "E:\funcalc-euses\homework\processed\notes5CMISB200SP04H2KEY.xml" 
+#benchmark:load iterations:1 file:E:\funcalc-euses\homework\processed\notes5CMISB200SP04H2KEY.xml cores:2 max processors:0
+Setting EvalCond[@Lookup!B42] = NOT(CACHE#0[@Lookup!B41<=INDEX(@Lookup!B39,1,1)])
+Rebuilding support graph
+Lifted 3 intransitive, 0 transitive array cells of 74 found.
+Read XMLSS, 7918 cells of which 1006 unique in 431 ms
