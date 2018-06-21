@@ -1,0 +1,6 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe load 3 0 "C:\Users\fbie\src\funcalc-euses\homework\processed\Test20Station20Powe#A90F3.xml" 
+#benchmark:load iterations:3 file:C:\Users\fbie\src\funcalc-euses\homework\processed\Test20Station20Powe#A90F3.xml cores:48 max processors:0
+load      	   30,5879ms	1
+load      	   31,3228ms	2
+load      	   31,8229ms	3

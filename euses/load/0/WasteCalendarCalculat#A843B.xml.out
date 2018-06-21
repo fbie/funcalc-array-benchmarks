@@ -1,0 +1,6 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe load 3 0 "C:\Users\fbie\src\funcalc-euses\inventory\processed\WasteCalendarCalculat#A843B.xml" 
+#benchmark:load iterations:3 file:C:\Users\fbie\src\funcalc-euses\inventory\processed\WasteCalendarCalculat#A843B.xml cores:48 max processors:0
+load      	   32,9199ms	1
+load      	   29,9624ms	2
+load      	   30,3343ms	3

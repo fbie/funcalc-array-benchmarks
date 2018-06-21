@@ -1,0 +1,6 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe load 3 0 "C:\Users\fbie\src\funcalc-examples\benchmarks\libreoffice_spreadsheets\stock_history.xml" 
+#benchmark:load iterations:3 file:C:\Users\fbie\src\funcalc-examples\benchmarks\libreoffice_spreadsheets\stock_history.xml cores:48 max processors:0
+load      	 2380,1676ms	1
+load      	 2374,7175ms	2
+load      	 2364,7250ms	3

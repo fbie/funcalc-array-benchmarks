@@ -1,0 +1,6 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe load 3 0 "C:\Users\fbie\src\funcalc-euses\homework\processed\v1tmp.xml" 
+#benchmark:load iterations:3 file:C:\Users\fbie\src\funcalc-euses\homework\processed\v1tmp.xml cores:48 max processors:0
+load      	    7,8824ms	1
+load      	    7,7817ms	2
+load      	    7,7611ms	3

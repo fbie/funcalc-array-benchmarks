@@ -1,0 +1,6 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe load 3 0 "C:\Users\fbie\src\funcalc-euses\modeling\processed\modeling-3.xml" 
+#benchmark:load iterations:3 file:C:\Users\fbie\src\funcalc-euses\modeling\processed\modeling-3.xml cores:48 max processors:0
+load      	    2,3047ms	1
+load      	    2,0871ms	2
+load      	    2,0637ms	3
