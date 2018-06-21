@@ -1,0 +1,6 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe load 3 0 "C:\Users\fbie\src\funcalc-euses\grades\processed\2002Qvols.xml" 
+#benchmark:load iterations:3 file:C:\Users\fbie\src\funcalc-euses\grades\processed\2002Qvols.xml cores:48 max processors:0
+load      	   31,8423ms	1
+load      	   31,8041ms	2
+load      	   31,7488ms	3

@@ -1,0 +1,6 @@
+
+C:\Users\fbie\src\funcalc>Funcalc.App\bin\Release\Funcalc.App.exe load 3 0 "C:\Users\fbie\src\funcalc-euses\filby\processed\PLANCK.xml" 
+#benchmark:load iterations:3 file:C:\Users\fbie\src\funcalc-euses\filby\processed\PLANCK.xml cores:48 max processors:0
+load      	   15,8782ms	1
+load      	   15,9543ms	2
+load      	   16,0711ms	3
